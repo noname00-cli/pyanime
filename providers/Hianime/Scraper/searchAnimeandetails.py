@@ -3,6 +3,7 @@
 
 
 import requests
+import json
 from bs4 import BeautifulSoup
 from config.hianime import configure
 
@@ -15,6 +16,7 @@ def searchAnimeandetails(name):
     soup = BeautifulSoup(html.text, 'html.parser')
     anime_blocks = soup.find_all('div', class_='flw-item')
     for block in anime_blocks:
+        No += 1
 
         # Extract basic info
         title_tag = block.find('h3', class_='film-name').find('a')
@@ -58,20 +60,24 @@ def searchAnimeandetails(name):
             total_episodes = 'N/A'
 
         anime_details = {
-            'No': No + 1,
+            'No': No,
             'Title': title,
             'Japanese Name': japanese_name,
             'Type': type_,
             'Duration': duration,
-            'Sub Episodes Available': sub_episodes,
-            'Dub Episodes Available': dub_episodes,
-            'Total Episodes': total_episodes,
+            'Episodes': total_episodes,
+            'Subs': sub_episodes,
+            'Dubs': dub_episodes,        
+        }
+
+        imp_details = {
+            'No': No,
+            'Watch Link': watch_link,
             'Image URL': image_url,
-            'Watch Link': watch_link
         }
 
         list_of_anime.append(anime_details)
-    return list_of_anime
+    return list_of_anime, imp_details
     
     
 
