@@ -74,5 +74,4 @@ def searchAnimeandetails(name):
     return list_of_anime
     
     
-print(searchAnimeandetails("Naruto"))  # Example usage
 
