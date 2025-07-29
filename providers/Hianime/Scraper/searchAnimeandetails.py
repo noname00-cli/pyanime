@@ -67,17 +67,84 @@ def searchAnimeandetails(name):
             'Duration': duration,
             'Episodes': total_episodes,
             'Subs': sub_episodes,
-            'Dubs': dub_episodes,        
+            'Dubs': dub_episodes,
+            'Imp' : {
+                'Watch Link': watch_link,
+                'Image URL': image_url,
+            }       
         }
 
-        imp_details = {
-            'No': No,
-            'Watch Link': watch_link,
-            'Image URL': image_url,
-        }
 
         list_of_anime.append(anime_details)
-    return list_of_anime, imp_details
+    return list_of_anime
+
+
+def getAnimeDetails(watch_link):
+    watch_link = watch_link.replace('/watch/', '/')
+    url = configure['baseurl']
+    html = requests.get(f'{url}{watch_link}', auth=('user', 'pass'))
+    soup = BeautifulSoup(html.text, 'html.parser')
+
+    # 1. img src url
+    img_tag = soup.find('img', class_='film-poster-img')
+    img_src = img_tag['src'] if img_tag else ""
+
+    # 2. data-jname (Title)
+    data_jname = soup.find('h2', class_='film-name')
+    anime_title = data_jname['data-jname'] if data_jname and data_jname.has_attr("data-jname") else ""
+
+    # 3. Tick items
+    tick_pg = None
+    tick_quality = None
+    for tick_item in soup.select('.tick-item'):
+        if 'tick-pg' in tick_item.get('class', []):
+            tick_pg = tick_item.get_text(strip=True)
+        if 'tick-quality' in tick_item.get('class', []):
+            tick_quality = tick_item.get_text(strip=True)
+
+
+
+    # 5. all item-title (all details + Studio)
+    item_titles = {}
+    for item in soup.select('.item.item-title, .item.item-list'):
+        head = item.find('span', class_='item-head')
+        if head:
+            head_text = head.get_text(strip=True).replace(':', '')
+            # For genres and producers, collect all <a> tags
+            if 'Genre' in head_text:
+                values = [a.get_text(strip=True) for a in item.find_all('a')]
+                item_titles['Genres'] = ', '.join(values)
+                continue   # Skip rest: we handled this field
+            if 'Producer' in head_text:
+                values = [a.get_text(strip=True) for a in item.find_all('a')]
+                item_titles['Producers'] = ', '.join(values)
+                continue   # Skip rest
+            # Usual detail extraction
+            values = []
+            for tag in item.find_all(['span', 'a']):
+                if tag == head: continue
+                if 'item-head' in tag.get('class', []): continue
+                values.append(tag.get_text(strip=True))
+            text_div = item.find('div', class_='text')
+            if text_div:
+                values.append(text_div.get_text(strip=True).replace('\n', ' '))
+            item_titles[head_text] = ', '.join([v for v in values if v])
+
+    # 6. item-list for genres and producers
+
+            
+
+    # JSON Structure
+    output = {
+        "img_src": img_src,
+        "title": anime_title,
+        "age": tick_pg,
+        "quality": tick_quality,
+        "details": item_titles,   
+    }
+
+    return output
+    
     
     
 
