@@ -3,7 +3,6 @@
 # main.py - Main user interface for pyanime.
 
 
-import json
 import shutil
 import textwrap
 from tabulate import tabulate
@@ -48,13 +47,13 @@ def clean_result(omit, results):
 
     
 # Displaying the welcome message.
-columns = shutil.get_terminal_size().columns
 separator('=')
+columns = shutil.get_terminal_size().columns
 text = "Welcome to pyanime (v1.0.0)"
 print(text.center(columns))
+
+
 separator('=')
-
-
 search = input("Name of anime: ")
 if search == "":
     print("No anime name provided.\nExiting...")
@@ -102,6 +101,7 @@ else:
 separator('=')
 anime_details = getAnimeDetails(stuff)
 print(hex_to_rgb("#fc861e","Anime Details:"))
+print()
 print(f"\tTitle: {hex_to_rgb("#75e64c",anime_details['title'])}")
 if 'Synonyms' in anime_details['details'] and anime_details['details']['Synonyms']:
     print(f"\tJapanese Name: {hex_to_rgb("#75e64c",anime_details['details']['Synonyms'])}")
@@ -127,12 +127,13 @@ print(f"\tStudio: {hex_to_rgb("#75e64c",anime_details['details']['Studios'])}")
 terminalsize=shutil.get_terminal_size(fallback=(80, 24))
 terminal_width = terminalsize.columns
 print(f"\tSynopsis: {wrap_text(hex_to_rgb("#88ae15",anime_details['details']['Overview']), width=terminal_width)}")
-separator('=')
+
 
 
 # Creating a table of the episodes of selected anime.
-episodes = getanimepisode(stuff)
-cleaned_anime, max_width = clean_result(["Episode ID", "URL"], episodes)
+separator('=')
+episode_list = getanimepisode(stuff)
+cleaned_anime, max_width = clean_result(["Episode ID", "URL"], episode_list)
 for row in cleaned_anime:
     for key in row:
         if key == "Title" or key == "Japanese name" or key == "Episode Name" :
@@ -145,11 +146,49 @@ for row in cleaned_anime:
 table = tabulate(cleaned_anime, headers="keys", tablefmt="grid", colalign=("left", "right", "center"))
 print(table)
 print()
+
+
 separator('=')
+selection = input("Enter the episode number to select Hint:[1 / 1,2 / 1-10 ]: ")
+if selection:
+    selected_episodes = []        
+    if '-' in selection:
+        start, end = map(int, selection.split('-'))
+        selected_episodes = [ep for ep in episode_list if start <= int(ep["No"]) <= end]
+    elif ',' in selection:
+        selected_episodes = [ep for ep in episode_list if int(ep["No"]) in map(int, selection.split(','))]
+    else:
+        selected_episodes = [ep for ep in episode_list if int(ep["No"]) == int(selection)]
 
 
-# Asking the user to select episodes from the list.
+separator('=')
+print(hex_to_rgb("#fc861e","Selected Episodes:"))
+print()
+sel_epi, max_width_epi = clean_result(["Episode ID", "URL"], selected_episodes)
+for row in sel_epi:
+    for key in row:
+        if key == "Title" or key == "Japanese name" or key == "Episode Name" :
+            row[key] = wrap_text_with_color(row[key], "#1fa1d9", max_width_epi)
+        elif key == "No":
+            row[key] = wrap_text_with_color(row[key], "#ffea00", max_width_epi)
+        else:
+            # normal wrap (no color)
+            row[key] = "\n".join(textwrap.wrap(str(row[key]), width=max_width_epi))
+table = tabulate(sel_epi, headers="keys", tablefmt="grid", colalign=("left", "right", "center"))
+print(table)
+print()
 
+
+separator('=')
+print(selected_episodes)
+
+
+
+
+    
+        
+    
+   
 
 
 

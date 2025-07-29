@@ -12,6 +12,11 @@ configure = {
         "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0"
     }
 }
+proxy_headers = {
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0",
+    "Referer": configure["baseurl"]
+}
+key = "https://raw.githubusercontent.com/itzzzme/megacloud-keys/refs/heads/main/key.txt"
 
 # As of the current year 2025 hianime has
 # these URLs:
