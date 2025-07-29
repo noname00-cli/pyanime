@@ -42,6 +42,7 @@ table = tabulate(search_results, headers = "keys", tablefmt="grid")
 print(table)
 print("\n")
 
+
 # Asking the user to select an anime from the search results.
 separator('=')
 if len(search_results) == 1:
