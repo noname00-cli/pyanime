@@ -17,7 +17,7 @@ proxy_headers = {
     "Referer": configure["baseurl"]
 }
 key = "https://raw.githubusercontent.com/itzzzme/megacloud-keys/refs/heads/main/key.txt"
-
+subtitle = "sub"        # Default subtitle language (sub/dub)
 # As of the current year 2025 hianime has
 # these URLs:
 # https://hianime.to    https://hianimez.is

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+#
 # searchEpisodedetails.py - This file contains the logic to extract episode details from a given anime ID.
 
 
 import requests
 from bs4 import BeautifulSoup
-import json
 from config.hianime import configure
 
 

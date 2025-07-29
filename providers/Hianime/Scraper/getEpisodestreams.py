@@ -5,16 +5,56 @@
 
 
 import requests
+from bs4 import BeautifulSoup
 import re
 import json
 from base64 import b64decode
 from Crypto.Cipher import AES
 from config.hianime import configure, proxy_headers, key
+from providers.Hianime.Scraper.tokenextractor import extract_token
 
 
-def serverextractor(selected_episodes):
-    
+def serverextractor(class_list, episode):
+    url = f"{configure['baseurl']}/ajax/v2/episode/servers?episodeId={episode['Episode ID']}"
+    proxy_headers["Referer"] = f"{configure['baseurl']}{episode['URL']}"
+    http = requests.get(url, headers=proxy_headers)
+    data = http.json()
+    if 'html' not in data:
+        print("No 'html' key in response data.")
+        exit(1)
+    html_content = data['html']
+    dust = BeautifulSoup(html_content, 'html.parser')
+    servers = []
+    selector = 'div.' + '.'.join(class_list)
+    block = dust.select_one(selector)
+    if block:
+        items = block.find_all('div', class_='item')
+        for item in items:
+            data_id = item.get('data-id')
+            data_server_id = item.get('data-server-id')
+            data_type = item.get('data-type')
+            label = None
+            a_tag = item.find('a', class_='btn')
+            if a_tag:
+                label = a_tag.text.strip()
+            servers.append({
+                "data_id": data_id,
+                "data_server_id": data_server_id,
+                "data_type": data_type,
+                "label": label
+            })
+    else:
+        print(f"No block found for classes: {class_list}")
+    return servers
 
+
+def serverextractor_v2(episode):
+    result = {
+    "sub_servers": serverextractor(['ps_-block-sub', 'servers-sub'], episode=episode),
+    "dub_servers": serverextractor(['ps_-block-sub', 'servers-dub'], episode=episode)
+    }
+    return result
+  
 
 def aes_cryptojs_decrypt(ciphertext_b64, key):
     ct = b64decode(ciphertext_b64)
@@ -30,9 +70,10 @@ def megacloud(server, id_str):
     fallback_1 = 'megaplay.buzz'
     fallback_2 = 'vidwish.live'
 
+
     try:
         proxy_headers["Referer"] = f"{configure['baseurl']}/watch/{id_str["URL"]}"
-        sources_resp = requests.get(f"{configure['baseurl']}/ajax/v2/episode/sources?id={server['Episodo ID']}",headers=proxy_headers)
+        sources_resp = requests.get(f"{configure['baseurl']}/ajax/v2/episode/sources?id={server['data_id']}",headers=proxy_headers)
         key_resp = requests.get(key)
         sources_data = sources_resp.json()
         keys = key_resp.text.strip()
@@ -62,9 +103,9 @@ def megacloud(server, id_str):
             decrypted_sources = json.loads(decrypted)
         except Exception as main_err:
             try:
-                fallback = fallback_1 if server['name'].lower() == 'hd-1' else fallback_2
+                fallback = fallback_1 if server['label'].lower() == 'hd-1' else fallback_2
                 proxy_headers["Referer"] = f"https://{fallback_1}/"
-                html = requests.get(f"https://{fallback}/stream/s-2/{id_str["Episode ID"]}/{server["type"]}", headers=proxy_headers).text
+                html = requests.get(f"https://{fallback}/stream/s-2/{id_str["Episode ID"]}/{server["data_type"]}", headers=proxy_headers).text
                 data_id_match = re.search(r'data-id=["\'](\d+)["\']', html)
                 real_id = data_id_match.group(1) if data_id_match else None
                 if not real_id:
@@ -83,7 +124,8 @@ def megacloud(server, id_str):
                 raise Exception(f"Fallback failed: {e}")
         return {
                 "id": id_str,
-                "type": server["type"],
+                "server": server["label"],
+                "type": server["data_type"],
                 "link": {
                     "file": decrypted_sources[0]["file"] if decrypted_sources and decrypted_sources[0].get("file") else "",
                     "type": "hls",
@@ -91,7 +133,6 @@ def megacloud(server, id_str):
                 "tracks": raw_source_data.get("tracks", []),
                 "intro": raw_source_data.get("intro"),
                 "outro": raw_source_data.get("outro"),
-                "server": server["name"],
             }
     except Exception as e:
         print(f"Error during megacloud({id_str}): {e}")

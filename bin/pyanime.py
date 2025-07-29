@@ -8,6 +8,8 @@ import textwrap
 from tabulate import tabulate
 from providers.Hianime.Scraper.searchAnimedetails import searchAnimeandetails, getAnimeDetails
 from providers.Hianime.Scraper.searchEpisodedetails import getanimepisode
+from providers.Hianime.Scraper.getEpisodestreams import serverextractor_v2, megacloud
+from config.hianime import subtitle
 
 
 # Asthetics only!!! Don't give a damn about this!!!
@@ -74,7 +76,6 @@ for row in cleaned_results:
         else:
             # normal wrap (no color)
             row[key] = "\n".join(textwrap.wrap(str(row[key]), width=max_col_width))
-
 table = tabulate(cleaned_results, headers="keys", tablefmt="grid", colalign=("left", "right", "center"))
 print(table)
 print()
@@ -180,7 +181,30 @@ print()
 
 
 separator('=')
-print(selected_episodes)
+if subtitle == None:
+    needs = input(f"Sub or Dub? [sub/dub]: ").strip().lower()
+else:
+    needs = subtitle
+print("Downloading media...")
+for episode in selected_episodes:
+    servers = serverextractor_v2(episode)
+    if needs == "sub":
+        servers = servers["sub_servers"]
+        media = megacloud(servers[0], episode)
+        print(media)
+    elif needs == "dub":
+        servers = servers["dub_servers"]
+        media = megacloud(servers[0], episode)
+        print(media)
+    else:
+        print("Invalid selection. Please choose 'sub' or 'dub'.")
+        continue
+
+
+
+    
+
+
 
 
 
