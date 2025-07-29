@@ -1,12 +1,14 @@
 #!/usr/env python3
 # -*- coding: utf-8 -*-
-# main.py  Main user interface for pyanime.
+# main.py - Main user interface for pyanime.
 
 
+import json
 import shutil
 import textwrap
 from tabulate import tabulate
-from providers.Hianime.Scraper.searchAnimeandetails import searchAnimeandetails, getAnimeDetails
+from providers.Hianime.Scraper.searchAnimedetails import searchAnimeandetails, getAnimeDetails
+from providers.Hianime.Scraper.searchEpisodedetails import getanimepisode
 
 
 # Asthetics only!!! Don't give a damn about this!!!
@@ -27,12 +29,22 @@ def hex_to_rgb(hex_code, text):
     return f"\033[38;2;{r};{g};{b}m{text}\033[0m"
 
 
-def wrap_text_with_color(text, hex_color):
+def wrap_text_with_color(text, hex_color, width):
     if not isinstance(text, str):
         text = str(text)
-    wrapped_lines = textwrap.wrap(text, width=max_col_width)
+    wrapped_lines = textwrap.wrap(text, width=width)
     colored_lines = [hex_to_rgb(hex_color, line) for line in wrapped_lines]
     return "\n".join(colored_lines)
+
+
+def clean_result(omit, results):
+    cleaned_results = []
+    for row in results:
+        new_row = {k: v for k, v in row.items() if k not in omit}
+        cleaned_results.append(new_row)
+    max_cols_in_row = max(len(row) for row in cleaned_results)
+    max_col_width = max(10, columns // max_cols_in_row)
+    return cleaned_results, max_col_width
 
     
 # Displaying the welcome message.
@@ -53,18 +65,13 @@ else:
 
 
 # Displaying the search results in a table format.
-cleaned_results = []
-for row in search_results:
-    new_row = {k: v for k, v in row.items() if k != "Imp"}
-    cleaned_results.append(new_row)
-max_cols_in_row = max(len(row) for row in cleaned_results)
-max_col_width = max(10, columns // max_cols_in_row)
+cleaned_results, max_col_width = clean_result(["Imp"], search_results)
 for row in cleaned_results:
     for key in row:
         if key == "Title" or key == "Japanese Name" or key == "Type" or key == "Duration" or key == "Episodes" or key == "Subs" or key == "Dubs":
-            row[key] = wrap_text_with_color(row[key], "#00b3ff")
+            row[key] = wrap_text_with_color(row[key], "#00b3ff", max_col_width)
         elif key == "No":
-            row[key] = wrap_text_with_color(row[key], "#ffea00")
+            row[key] = wrap_text_with_color(row[key], "#ffea00", max_col_width)
         else:
             # normal wrap (no color)
             row[key] = "\n".join(textwrap.wrap(str(row[key]), width=max_col_width))
@@ -121,6 +128,29 @@ terminalsize=shutil.get_terminal_size(fallback=(80, 24))
 terminal_width = terminalsize.columns
 print(f"\tSynopsis: {wrap_text(hex_to_rgb("#88ae15",anime_details['details']['Overview']), width=terminal_width)}")
 separator('=')
+
+
+# Creating a table of the episodes of selected anime.
+episodes = getanimepisode(stuff)
+cleaned_anime, max_width = clean_result(["Episode ID", "URL"], episodes)
+for row in cleaned_anime:
+    for key in row:
+        if key == "Title" or key == "Japanese name" or key == "Episode Name" :
+            row[key] = wrap_text_with_color(row[key], "#1fa1d9", max_width)
+        elif key == "No":
+            row[key] = wrap_text_with_color(row[key], "#ffea00", max_width)
+        else:
+            # normal wrap (no color)
+            row[key] = "\n".join(textwrap.wrap(str(row[key]), width=max_width))
+table = tabulate(cleaned_anime, headers="keys", tablefmt="grid", colalign=("left", "right", "center"))
+print(table)
+print()
+separator('=')
+
+
+# Asking the user to select episodes from the list.
+
+
 
 
 

@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
-# hianime.py
-# Configuration for HiAnime 
+#
+# hianime.py - Configuration for HiAnime 
 # This file contains settings for the HiAnime service, including constants.
 
 configure = {
