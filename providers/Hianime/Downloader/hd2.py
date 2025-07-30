@@ -5,7 +5,9 @@
 
 
 import requests
+import os
 import m3u8
+import yt_dlp
 from config.hianime import quality
 
 
@@ -30,18 +32,42 @@ def m3u8_parsing(m3u8_dict):
     m3u8_data = requests.get(url, headers=hd2_headers)
     playlist_str = m3u8_data.text
     m3u8_obj = m3u8.loads(playlist_str)
+    Name = m3u8_dict["id"]["Title"]
 
     # Access variants
     for playlist in m3u8_obj.playlists:
         if quality == f"{playlist.stream_info.resolution}".strip("()").replace(" ", "").split(",")[1]+"p":
             final_url = m3u8_dict["link"]["file"].replace('/master.m3u8', f'/{playlist.uri}')
             final_media = requests.get(final_url, headers=hd2_headers)
-            m3u8_obj2 = m3u8.loads(final_media.text)
-            segment_urls = [segment.uri for segment in m3u8_obj2.segments]
-            return segment_urls
+            return final_media.text, Name
+    
         
 
-#def downloading():
+def downloading(segments, Name):
+    home_dir = os.path.expanduser("~")
+    cache = f"{home_dir}/.animecache"
+    os.makedirs(cache, exist_ok=True)
+    os.chdir(cache)
+    with open(f"{Name}.m3u8", 'w',encoding='utf-8') as m3u8_writer:
+        m3u8_writer.write(segments)
+    ydl_opts = {
+        'outtmpl': f"{Name}.mp4",  # Output filename or template
+        'quiet': False,          # Set to True for silent download
+        'no_warnings': True,
+        'merge_output_format': 'mp4',
+        'http_headers': hd2_headers,
+        'enable_file_urls': True,
+        'concurrent_fragment_downloads': 16  
+    }
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        ydl.download([f"file:///{cache}/{Name}.m3u8"])
+        m3u8_writer.close()
+
+        
+
+
+
+
 
             
 
