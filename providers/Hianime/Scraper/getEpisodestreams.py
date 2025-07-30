@@ -10,7 +10,7 @@ import re
 import json
 from base64 import b64decode
 from Crypto.Cipher import AES
-from config.hianime import configure, proxy_headers, key
+from config.hianime import configure, proxy_headers, key, server_type
 from providers.Hianime.Scraper.tokenextractor import extract_token
 
 
@@ -66,7 +66,7 @@ def aes_cryptojs_decrypt(ciphertext_b64, key):
     return decrypted.decode('utf-8')
 
 
-def megacloud(server, id_str):
+def streams(server, id_str):
     fallback_1 = 'megaplay.buzz'
     fallback_2 = 'vidwish.live'
 
@@ -103,7 +103,7 @@ def megacloud(server, id_str):
             decrypted_sources = json.loads(decrypted)
         except Exception as main_err:
             try:
-                fallback = fallback_1 if server['label'].lower() == 'hd-1' else fallback_2
+                fallback = fallback_1 if server['label'].lower() == server_type else fallback_2
                 proxy_headers["Referer"] = f"https://{fallback_1}/"
                 html = requests.get(f"https://{fallback}/stream/s-2/{id_str["Episode ID"]}/{server["data_type"]}", headers=proxy_headers).text
                 data_id_match = re.search(r'data-id=["\'](\d+)["\']', html)
@@ -124,7 +124,7 @@ def megacloud(server, id_str):
                 raise Exception(f"Fallback failed: {e}")
         return {
                 "id": id_str,
-                "server": server["label"],
+                "server": server_type.upper(),
                 "type": server["data_type"],
                 "link": {
                     "file": decrypted_sources[0]["file"] if decrypted_sources and decrypted_sources[0].get("file") else "",

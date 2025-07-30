@@ -8,7 +8,8 @@ import textwrap
 from tabulate import tabulate
 from providers.Hianime.Scraper.searchAnimedetails import searchAnimeandetails, getAnimeDetails
 from providers.Hianime.Scraper.searchEpisodedetails import getanimepisode
-from providers.Hianime.Scraper.getEpisodestreams import serverextractor_v2, megacloud
+from providers.Hianime.Scraper.getEpisodestreams import serverextractor_v2, streams
+from providers.Hianime.Downloader.hd2 import m3u8_parsing
 from config.hianime import subtitle
 
 
@@ -190,15 +191,20 @@ for episode in selected_episodes:
     servers = serverextractor_v2(episode)
     if needs == "sub":
         servers = servers["sub_servers"]
-        media = megacloud(servers[0], episode)
-        print(media)
+        media = streams(servers[0], episode)
+        #print(media)
+        m3u8_parsing(media)
     elif needs == "dub":
         servers = servers["dub_servers"]
-        media = megacloud(servers[0], episode)
-        print(media)
+        media = streams(servers[0], episode)
+        #print(media)
+        m3u8_parsing(media)
     else:
         print("Invalid selection. Please choose 'sub' or 'dub'.")
         continue
+
+
+
 
 
 
