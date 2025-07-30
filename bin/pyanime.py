@@ -8,7 +8,7 @@ import textwrap
 from tabulate import tabulate
 from providers.Hianime.Scraper.searchAnimedetails import searchAnimeandetails, getAnimeDetails
 from providers.Hianime.Scraper.searchEpisodedetails import getanimepisode
-from providers.Hianime.Scraper.getEpisodestreams import serverextractor_v2, streams
+from providers.Hianime.Scraper.getEpisodestreams import serverextractor, streams
 from providers.Hianime.Downloader.hd2 import m3u8_parsing, downloading
 from config.hianime import subtitle
 
@@ -47,6 +47,20 @@ def clean_result(omit, results):
     max_cols_in_row = max(len(row) for row in cleaned_results)
     max_col_width = max(10, columns // max_cols_in_row)
     return cleaned_results, max_col_width
+
+
+def choose_servers(servers, needs):
+    selected_servers = [s for s in servers if s['data_type'] == needs]
+    if selected_servers:
+        return selected_servers
+    fallback_type = 'dub' if needs == 'sub' else 'sub'
+    fallback_servers = [s for s in servers if s['data_type'] == fallback_type]
+    if fallback_servers:
+        print(f"Falling back to {hex_to_rgb("#00fb8a", fallback_type)}.")
+        print()
+        return fallback_servers
+    print("No servers available for needs or fallback.")
+    return []
 
     
 # Displaying the welcome message.
@@ -186,24 +200,26 @@ if subtitle == None:
     needs = input(f"Sub or Dub? [sub/dub]: ").strip().lower()
 else:
     needs = subtitle
-print("Downloading media...")
+print(hex_to_rgb("#fc861e","Downloading media..."))
+print()
 for episode in selected_episodes:
-    servers = serverextractor_v2(episode)
-    if needs == "sub":
-        servers = servers["sub_servers"]
-        media = streams(servers[0], episode)
-        #print(media)
-        media, name = m3u8_parsing(media)
-        downloading(media, name)
-    elif needs == "dub":
-        servers = servers["dub_servers"]
-        media = streams(servers[0], episode)
-        #print(media)
-        media, name = m3u8_parsing(media)
-        downloading(media, name)
-    else:
-        print("Invalid selection. Please choose 'sub' or 'dub'.")
+    servers = serverextractor(episode)
+    selected_servers = choose_servers(servers, needs)
+    if not selected_servers:
+        print(f"No servers found for episode {episode['Episode ID']}. Skipping.")
         continue
+    media = streams(selected_servers[0], episode)
+    media, name = m3u8_parsing(media)
+    separator("=")
+    downloading(media, f"{episode["No"]}. {name}", anime_details['title'])
+    separator("=")
+print()
+print("\tDone")
+print("\tExiting...")
+print()
+separator("=")
+
+
 
 
 

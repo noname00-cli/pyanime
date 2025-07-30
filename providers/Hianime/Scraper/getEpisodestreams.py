@@ -14,7 +14,8 @@ from config.hianime import configure, proxy_headers, key, server_type
 from providers.Hianime.Scraper.tokenextractor import extract_token
 
 
-def serverextractor(class_list, episode):
+def serverextractor(episode):
+    class_lists = [['ps_-block-sub', 'servers-sub'],['ps_-block-sub', 'servers-dub']]
     url = f"{configure['baseurl']}/ajax/v2/episode/servers?episodeId={episode['Episode ID']}"
     proxy_headers["Referer"] = f"{configure['baseurl']}{episode['URL']}"
     http = requests.get(url, headers=proxy_headers)
@@ -25,37 +26,32 @@ def serverextractor(class_list, episode):
     html_content = data['html']
     dust = BeautifulSoup(html_content, 'html.parser')
     servers = []
-    selector = 'div.' + '.'.join(class_list)
-    block = dust.select_one(selector)
-    if block:
-        items = block.find_all('div', class_='item')
-        for item in items:
-            data_id = item.get('data-id')
-            data_server_id = item.get('data-server-id')
-            data_type = item.get('data-type')
-            label = None
-            a_tag = item.find('a', class_='btn')
-            if a_tag:
-                label = a_tag.text.strip()
-            servers.append({
-                "data_id": data_id,
-                "data_server_id": data_server_id,
-                "data_type": data_type,
-                "label": label
-            })
-    else:
-        print(f"No block found for classes: {class_list}")
+    for class_list in class_lists:
+        selector = 'div.' + '.'.join(class_list)
+        block = dust.select_one(selector)
+        if block:
+            items = block.find_all('div', class_='item')
+            for item in items:
+                data_id = item.get('data-id')
+                data_server_id = item.get('data-server-id')
+                data_type = item.get('data-type')
+                label = None
+                a_tag = item.find('a', class_='btn')
+                if a_tag:
+                    label = a_tag.text.strip()
+                servers.append({
+                    "data_id": data_id,
+                    "data_server_id": data_server_id,
+                    "data_type": data_type,
+                    "label": label
+                })
+        else:
+            print()
+            print(f"\033[1mThere is \033[31mno\033[0m\033[1m {class_list[1][8:]} for this Episode.\033[0m")
+            print()
     return servers
 
-
-def serverextractor_v2(episode):
-    result = {
-    "sub_servers": serverextractor(['ps_-block-sub', 'servers-sub'], episode=episode),
-    "dub_servers": serverextractor(['ps_-block-sub', 'servers-dub'], episode=episode)
-    }
-    return result
   
-
 def aes_cryptojs_decrypt(ciphertext_b64, key):
     ct = b64decode(ciphertext_b64)
     iv = bytes([0] * 16)
