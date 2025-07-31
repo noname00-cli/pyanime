@@ -22,6 +22,7 @@ server_type = "hd-2"    # Possible values (hd-1/hd-2/hd-3)
 quality = "1080p"       # quality (1080p/720p/360p)
 consume_data = "stream" # What do you want to do with this video (stream/watch)
 player = "vlc"          # Favourite Player (vlc/mpv/iina)
+parallel = 6            # ↑ increase number to get faster speeds (caveats: could get a temporary ip/device ban if continuous request sent)
 
 
 # As of the current year 2025 hianime has

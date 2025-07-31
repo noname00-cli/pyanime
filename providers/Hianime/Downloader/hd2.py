@@ -8,7 +8,7 @@ import requests
 import os
 import m3u8
 import yt_dlp
-from config.hianime import quality
+from config.hianime import quality, parallel
 
 
 hd2_headers = {
@@ -59,7 +59,7 @@ def downloading(segments, Name, Anime):
         'merge_output_format': 'mp4',
         'http_headers': hd2_headers,
         'enable_file_urls': True,
-        'concurrent_fragment_downloads': 16  
+        'concurrent_fragment_downloads': parallel  
     }
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download([f"file:///{cache}/{fixed_Name}.m3u8"])
