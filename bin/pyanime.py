@@ -75,7 +75,7 @@ search = input("Name of anime: ")
 if search == "":
     print("No anime name provided.\nExiting...")
     separator('=')
-    exit(0)
+    exit(1)
 else:
     search_results = searchAnimeandetails(search)
 
@@ -103,7 +103,7 @@ if len(search_results) == 1:
 elif len(search_results) == 0:
     print("No anime found with that name.\nExiting...")
     separator('=')
-    exit(0)
+    exit(1)
 else:
     separator('=')
     no = input("Enter the no of the anime you want to select: ")
@@ -211,13 +211,21 @@ for episode in selected_episodes:
     media = streams(selected_servers[0], episode)
     media, name = m3u8_parsing(media)
     separator("=")
-    downloading(media, f"{episode["No"]}. {name}", anime_details['title'])
-    separator("=")
-print()
-print("\tDone")
-print("\tExiting...")
-print()
-separator("=")
+    code = downloading(media, f"{episode["No"]}. {name}", anime_details['title'])
+    if code == 1:
+        print()
+        print(f"{hex_to_rgb("#FF0000","Failed to download!!!")} Check for {hex_to_rgb("#73FF2E","pyanime.log")} in parent directory.")
+        print("Exiting...")
+        print()
+        separator("=")
+        exit(1)
+    elif code == 0:
+        separator("=")
+        print()
+        print(hex_to_rgb("#73FF2E","Done"))
+        print("Exiting...")
+        print()
+        separator("=")
 
 
 

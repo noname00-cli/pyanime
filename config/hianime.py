@@ -3,6 +3,12 @@
 #
 # hianime.py - Configuration for HiAnime 
 # This file contains settings for the HiAnime service, including constants.
+import logging
+
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s:%(name)s: %(message)s', filename='pyanime.log', filemode='a')
+logger = logging.getLogger(__name__)
+
 
 configure = {
     "baseurl": "https://hianime.bz",
@@ -13,16 +19,26 @@ configure = {
     }
 }
 proxy_headers = {
-    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0",
-    "Referer": configure["baseurl"]
+    'user-agent': "Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0",
+    'accept': '*/*',
+    'accept-language': 'en-US,en;q=0.5',
+    'origin': configure["baseurl"],
+    'referer': f'{configure["baseurl"]}/',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'cross-site',
+    'te': 'trailers',
 }
 key = "https://raw.githubusercontent.com/itzzzme/megacloud-keys/refs/heads/main/key.txt"
 subtitle = "sub"        # Default subtitle language (sub/dub)
-server_type = "hd-2"    # Possible values (hd-1/hd-2/hd-3)
+server_type = "hd-3"    # Possible values (hd-1/hd-2/hd-3)
 quality = "1080p"       # quality (1080p/720p/360p)
 consume_data = "stream" # What do you want to do with this video (stream/watch)
 player = "vlc"          # Favourite Player (vlc/mpv/iina)
 parallel = 6            # ↑ increase number to get faster speeds (caveats: could get a temporary ip/device ban if continuous request sent)
+timeout = 10            # giving time to parse the media urls 
+proxy_servers = {}      # here we have proxy set but not working just for showpiece (hint: use vpn if u get an ip ban)
+                        # search for "vpngate" or "vpnbook" for using with vpn.
 
 
 # As of the current year 2025 hianime has
