@@ -1,0 +1,1445 @@
+2025-08-01 10:57:57 - pyanime - [32mINFO[0m - logging_config.py:109 - setup_logging - Logging system initialized
+2025-08-01 10:57:57 - pyanime - [32mINFO[0m - logging_config.py:110 - setup_logging - Log level: INFO
+2025-08-01 10:57:57 - pyanime - [32mINFO[0m - logging_config.py:111 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 10:57:57 - pyanime - [32mINFO[0m - logging_config.py:112 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 10:57:57 - pyanime - [32mINFO[0m - logging_config.py:113 - setup_logging - Backup count: 5
+2025-08-01 10:57:57 - pyanime - [32mINFO[0m - logging_config.py:109 - setup_logging - Logging system initialized
+2025-08-01 10:57:57 - pyanime - [32mINFO[0m - logging_config.py:110 - setup_logging - Log level: DEBUG
+2025-08-01 10:57:57 - pyanime - [32mINFO[0m - logging_config.py:111 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 10:57:57 - pyanime - [32mINFO[0m - logging_config.py:112 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 10:57:57 - pyanime - [32mINFO[0m - logging_config.py:113 - setup_logging - Backup count: 5
+2025-08-01 10:57:57 - pyanime - [36mDEBUG[0m - test_logging.py:26 - test_basic_logging - This is a debug message
+2025-08-01 10:57:57 - pyanime - [32mINFO[0m - test_logging.py:27 - test_basic_logging - This is an info message
+2025-08-01 10:57:57 - pyanime - [33mWARNING[0m - test_logging.py:28 - test_basic_logging - This is a warning message
+2025-08-01 10:57:57 - pyanime - [31mERROR[0m - test_logging.py:29 - test_basic_logging - This is an error message
+2025-08-01 10:57:57 - pyanime - [35mCRITICAL[0m - test_logging.py:30 - test_basic_logging - This is a critical message
+2025-08-01 10:57:57 - pyanime.scraper.test - [32mINFO[0m - test_logging.py:44 - test_module_logging - Scraper module test message
+2025-08-01 10:57:57 - pyanime.downloader.test - [32mINFO[0m - test_logging.py:45 - test_module_logging - Downloader module test message
+2025-08-01 10:57:57 - pyanime.config.test - [32mINFO[0m - test_logging.py:46 - test_module_logging - Config module test message
+2025-08-01 10:57:57 - pyanime.test - [36mDEBUG[0m - logging_config.py:146 - wrapper - Entering function: wrapper
+2025-08-01 10:57:57 - pyanime.test - [36mDEBUG[0m - logging_config.py:147 - wrapper - Arguments: args=(5, 3), kwargs={}
+2025-08-01 10:57:57 - pyanime.test - [36mDEBUG[0m - logging_config.py:186 - wrapper - Function test_decorated_function executed in 0.1002 seconds
+2025-08-01 10:57:57 - pyanime.test - [36mDEBUG[0m - logging_config.py:154 - wrapper - Function wrapper completed successfully
+2025-08-01 10:57:57 - pyanime.test - [36mDEBUG[0m - logging_config.py:155 - wrapper - Return value: 8
+2025-08-01 10:57:57 - pyanime.test.errors - [31mERROR[0m - test_logging.py:80 - test_error_logging - Caught an exception: division by zero
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\test_logging.py", line 78, in test_error_logging
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+2025-08-01 11:00:08 - pyanime - [32mINFO[0m - logging_config.py:109 - setup_logging - Logging system initialized
+2025-08-01 11:00:08 - pyanime - [32mINFO[0m - logging_config.py:110 - setup_logging - Log level: INFO
+2025-08-01 11:00:08 - pyanime - [32mINFO[0m - logging_config.py:111 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 11:00:08 - pyanime - [32mINFO[0m - logging_config.py:112 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 11:00:08 - pyanime - [32mINFO[0m - logging_config.py:113 - setup_logging - Backup count: 5
+2025-08-01 11:03:08 - pyanime - [32mINFO[0m - logging_config.py:109 - setup_logging - Logging system initialized
+2025-08-01 11:03:08 - pyanime - [32mINFO[0m - logging_config.py:110 - setup_logging - Log level: INFO
+2025-08-01 11:03:08 - pyanime - [32mINFO[0m - logging_config.py:111 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 11:03:08 - pyanime - [32mINFO[0m - logging_config.py:112 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 11:03:08 - pyanime - [32mINFO[0m - logging_config.py:113 - setup_logging - Backup count: 5
+2025-08-01 11:03:08 - pyanime - [32mINFO[0m - logging_config.py:109 - setup_logging - Logging system initialized
+2025-08-01 11:03:08 - pyanime - [32mINFO[0m - logging_config.py:110 - setup_logging - Log level: DEBUG
+2025-08-01 11:03:08 - pyanime - [32mINFO[0m - logging_config.py:111 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 11:03:08 - pyanime - [32mINFO[0m - logging_config.py:112 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 11:03:08 - pyanime - [32mINFO[0m - logging_config.py:113 - setup_logging - Backup count: 5
+2025-08-01 11:03:08 - pyanime - [36mDEBUG[0m - test_logging.py:26 - test_basic_logging - This is a debug message
+2025-08-01 11:03:08 - pyanime - [32mINFO[0m - test_logging.py:27 - test_basic_logging - This is an info message
+2025-08-01 11:03:08 - pyanime - [33mWARNING[0m - test_logging.py:28 - test_basic_logging - This is a warning message
+2025-08-01 11:03:08 - pyanime - [31mERROR[0m - test_logging.py:29 - test_basic_logging - This is an error message
+2025-08-01 11:03:08 - pyanime - [35mCRITICAL[0m - test_logging.py:30 - test_basic_logging - This is a critical message
+2025-08-01 11:03:08 - pyanime.scraper.test - [32mINFO[0m - test_logging.py:44 - test_module_logging - Scraper module test message
+2025-08-01 11:03:08 - pyanime.downloader.test - [32mINFO[0m - test_logging.py:45 - test_module_logging - Downloader module test message
+2025-08-01 11:03:08 - pyanime.config.test - [32mINFO[0m - test_logging.py:46 - test_module_logging - Config module test message
+2025-08-01 11:03:08 - pyanime.test - [36mDEBUG[0m - logging_config.py:146 - wrapper - Entering function: wrapper
+2025-08-01 11:03:08 - pyanime.test - [36mDEBUG[0m - logging_config.py:147 - wrapper - Arguments: args=(5, 3), kwargs={}
+2025-08-01 11:03:08 - pyanime.test - [36mDEBUG[0m - logging_config.py:186 - wrapper - Function test_decorated_function executed in 0.1006 seconds
+2025-08-01 11:03:08 - pyanime.test - [36mDEBUG[0m - logging_config.py:154 - wrapper - Function wrapper completed successfully
+2025-08-01 11:03:08 - pyanime.test - [36mDEBUG[0m - logging_config.py:155 - wrapper - Return value: 8
+2025-08-01 11:03:08 - pyanime.test.errors - [31mERROR[0m - test_logging.py:80 - test_error_logging - Caught an exception: division by zero
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\test_logging.py", line 78, in test_error_logging
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+2025-08-01 11:03:13 - pyanime - [32mINFO[0m - logging_config.py:109 - setup_logging - Logging system initialized
+2025-08-01 11:03:13 - pyanime - [32mINFO[0m - logging_config.py:110 - setup_logging - Log level: INFO
+2025-08-01 11:03:13 - pyanime - [32mINFO[0m - logging_config.py:111 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 11:03:13 - pyanime - [32mINFO[0m - logging_config.py:112 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 11:03:13 - pyanime - [32mINFO[0m - logging_config.py:113 - setup_logging - Backup count: 5
+2025-08-01 11:03:45 - pyanime - [32mINFO[0m - logging_config.py:109 - setup_logging - Logging system initialized
+2025-08-01 11:03:45 - pyanime - [32mINFO[0m - logging_config.py:110 - setup_logging - Log level: INFO
+2025-08-01 11:03:45 - pyanime - [32mINFO[0m - logging_config.py:111 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 11:03:45 - pyanime - [32mINFO[0m - logging_config.py:112 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 11:03:45 - pyanime - [32mINFO[0m - logging_config.py:113 - setup_logging - Backup count: 5
+2025-08-01 11:03:47 - pyanime.main - [32mINFO[0m - pyanime.py:99 - <module> - Starting pyanime application
+2025-08-01 11:03:56 - pyanime.main - [32mINFO[0m - pyanime.py:109 - <module> - User search query: gleipnir
+2025-08-01 11:03:56 - pyanime.main - [32mINFO[0m - pyanime.py:116 - <module> - Searching for anime: gleipnir
+2025-08-01 11:03:56 - pyanime.scraper.searchAnimedetails - [32mINFO[0m - searchAnimedetails.py:23 - searchAnimeandetails - Searching for anime: gleipnir
+2025-08-01 11:03:57 - pyanime.scraper.searchAnimedetails - [32mINFO[0m - searchAnimedetails.py:35 - searchAnimeandetails - Found 1 anime blocks in search results
+2025-08-01 11:03:57 - pyanime.scraper.searchAnimedetails - [32mINFO[0m - searchAnimedetails.py:99 - searchAnimeandetails - Search completed. Found 1 anime results
+2025-08-01 11:03:57 - pyanime.main - [32mINFO[0m - pyanime.py:121 - <module> - Displaying search results: 1 results found
+2025-08-01 11:03:57 - pyanime.main - [32mINFO[0m - pyanime.py:67 - clean_result - Cleaning results: omitting fields ['Imp'] from 1 results
+2025-08-01 11:03:57 - pyanime.main - [32mINFO[0m - pyanime.py:140 - <module> - Single anime found, auto-selecting: Gleipnir
+2025-08-01 11:03:57 - pyanime.main - [32mINFO[0m - pyanime.py:162 - <module> - Fetching anime details for: Gleipnir
+2025-08-01 11:03:57 - pyanime.scraper.searchAnimedetails - [32mINFO[0m - searchAnimedetails.py:110 - getAnimeDetails - Getting anime details for watch link: /watch/gleipnir-3377
+2025-08-01 11:03:57 - pyanime.scraper.searchAnimedetails - [32mINFO[0m - searchAnimedetails.py:173 - getAnimeDetails - Successfully extracted anime details for: Gleipnir
+2025-08-01 11:03:57 - pyanime.main - [32mINFO[0m - pyanime.py:164 - <module> - Anime details retrieved successfully
+2025-08-01 11:03:57 - pyanime.main - [32mINFO[0m - pyanime.py:198 - <module> - Fetching episode list for anime: Gleipnir
+2025-08-01 11:03:57 - pyanime.scraper.searchEpisodedetails - [32mINFO[0m - searchEpisodedetails.py:25 - getanimepisode - Getting episode list for watch link: /watch/gleipnir-3377
+2025-08-01 11:03:58 - pyanime.scraper.searchEpisodedetails - [32mINFO[0m - searchEpisodedetails.py:50 - getanimepisode - Found 13 episode elements
+2025-08-01 11:03:58 - pyanime.scraper.searchEpisodedetails - [32mINFO[0m - searchEpisodedetails.py:69 - getanimepisode - Successfully extracted 13 episodes
+2025-08-01 11:03:58 - pyanime.main - [32mINFO[0m - pyanime.py:200 - <module> - Episode list retrieved: 13 episodes found
+2025-08-01 11:03:58 - pyanime.main - [32mINFO[0m - pyanime.py:67 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 13 results
+2025-08-01 11:04:08 - pyanime.main - [32mINFO[0m - pyanime.py:219 - <module> - User episode selection: 1
+2025-08-01 11:04:08 - pyanime.main - [32mINFO[0m - pyanime.py:232 - <module> - Single selection: episode 1
+2025-08-01 11:04:08 - pyanime.main - [32mINFO[0m - pyanime.py:235 - <module> - Selected 1 episodes for download
+2025-08-01 11:04:08 - pyanime.main - [32mINFO[0m - pyanime.py:239 - <module> - Displaying selected episodes
+2025-08-01 11:04:08 - pyanime.main - [32mINFO[0m - pyanime.py:67 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 1 results
+2025-08-01 11:04:08 - pyanime.main - [32mINFO[0m - pyanime.py:264 - <module> - Using default subtitle preference: sub
+2025-08-01 11:04:08 - pyanime.main - [32mINFO[0m - pyanime.py:266 - <module> - Starting download process for 1 episodes
+2025-08-01 11:04:08 - pyanime.main - [32mINFO[0m - pyanime.py:271 - <module> - Processing episode 1/1: Something Inside of Me
+2025-08-01 11:04:08 - pyanime.main - [32mINFO[0m - pyanime.py:274 - <module> - Extracting servers for episode 33384
+2025-08-01 11:04:08 - pyanime.scraper.getEpisodestreams - [32mINFO[0m - getEpisodestreams.py:30 - serverextractor - Extracting servers for episode: 33384
+2025-08-01 11:04:08 - pyanime.scraper.getEpisodestreams - [32mINFO[0m - getEpisodestreams.py:34 - serverextractor - Fetching servers from URL: https://hianime.bz/ajax/v2/episode/servers?episodeId=33384
+2025-08-01 11:04:09 - pyanime.scraper.getEpisodestreams - [32mINFO[0m - getEpisodestreams.py:57 - serverextractor - Found 3 server items for class ['ps_-block-sub', 'servers-sub']
+2025-08-01 11:04:09 - pyanime.scraper.getEpisodestreams - [32mINFO[0m - getEpisodestreams.py:57 - serverextractor - Found 3 server items for class ['ps_-block-sub', 'servers-dub']
+2025-08-01 11:04:09 - pyanime.scraper.getEpisodestreams - [32mINFO[0m - getEpisodestreams.py:75 - serverextractor - Extracted 6 servers total for episode 33384
+2025-08-01 11:04:09 - pyanime.main - [32mINFO[0m - pyanime.py:276 - <module> - Found 6 servers for episode
+2025-08-01 11:04:09 - pyanime.main - [32mINFO[0m - pyanime.py:80 - choose_servers - Choosing servers for needs: sub from 6 available servers
+2025-08-01 11:04:09 - pyanime.main - [32mINFO[0m - pyanime.py:83 - choose_servers - Found 3 servers matching needs: sub
+2025-08-01 11:04:09 - pyanime.main - [32mINFO[0m - pyanime.py:284 - <module> - Getting media streams for episode
+2025-08-01 11:04:09 - pyanime.scraper.getEpisodestreams - [32mINFO[0m - getEpisodestreams.py:102 - streams - Starting streams extraction for episode 33384 on server HD-1
+2025-08-01 11:04:10 - pyanime.scraper.tokenextractor - [32mINFO[0m - tokenextractor.py:20 - extract_token - Extracting token from URL: https://megacloud.blog/embed-2/v3/e-1/YiQauLjTpJJS?k=1&autoPlay=0&oa=0&asi=1
+2025-08-01 11:04:11 - pyanime.scraper.tokenextractor - [32mINFO[0m - tokenextractor.py:76 - extract_token - Successfully extracted token: JYYniiapwuwFaUFc3REO...
+2025-08-01 11:04:12 - pyanime.scraper.getEpisodestreams - [31mERROR[0m - getEpisodestreams.py:92 - aes_cryptojs_decrypt - AES decryption error: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 11:04:12 - pyanime.scraper.getEpisodestreams - [31mERROR[0m - logging_config.py:161 - wrapper - Function aes_cryptojs_decrypt failed with exception: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\config\logging_config.py", line 151, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 11:04:12 - pyanime.scraper.getEpisodestreams - [33mWARNING[0m - getEpisodestreams.py:150 - streams - Main source extraction failed: Incorrect AES key length (64 bytes), attempting fallback...
+2025-08-01 11:04:13 - pyanime.scraper.getEpisodestreams - [32mINFO[0m - getEpisodestreams.py:172 - streams - Fallback extraction successful
+2025-08-01 11:04:13 - pyanime.main - [32mINFO[0m - pyanime.py:286 - <module> - Parsing m3u8 for episode
+2025-08-01 11:04:13 - pyanime.downloader.hd2 - [32mINFO[0m - hd2.py:77 - m3u8_parsing - Starting m3u8_parsing for: Something Inside of Me
+2025-08-01 11:05:24 - pyanime.downloader.hd2 - [32mINFO[0m - hd2.py:55 - proxy - Request successful using native IP.
+2025-08-01 11:05:24 - pyanime.downloader.hd2 - [32mINFO[0m - hd2.py:89 - m3u8_parsing - Requested m3u8: https://tubeplx.viddsn.cfd/anime/a9b4ec2eb4ab7b1b9c3392bb5388119d/c95bb2959d43dc119630bf216383b160/master.m3u8 | Status: 200
+2025-08-01 11:05:24 - pyanime.downloader.hd2 - [32mINFO[0m - hd2.py:100 - m3u8_parsing - Found matching quality, fetching final media from: https://tubeplx.viddsn.cfd/anime/a9b4ec2eb4ab7b1b9c3392bb5388119d/c95bb2959d43dc119630bf216383b160/index-f1-v1-a1.m3u8
+2025-08-01 11:06:35 - pyanime.downloader.hd2 - [32mINFO[0m - hd2.py:55 - proxy - Request successful using native IP.
+2025-08-01 11:06:35 - pyanime.downloader.hd2 - [32mINFO[0m - hd2.py:105 - m3u8_parsing - Fetched final media: https://tubeplx.viddsn.cfd/anime/a9b4ec2eb4ab7b1b9c3392bb5388119d/c95bb2959d43dc119630bf216383b160/index-f1-v1-a1.m3u8 | Status: 200
+2025-08-01 11:06:35 - pyanime.main - [32mINFO[0m - pyanime.py:295 - <module> - Starting download for episode: Something Inside of Me
+2025-08-01 11:06:35 - pyanime.downloader.hd2 - [32mINFO[0m - hd2.py:118 - downloading - Starting download for 1. Something Inside of Me in Gleipnir
+2025-08-01 11:06:35 - pyanime.downloader.hd2 - [32mINFO[0m - hd2.py:132 - downloading - Wrote segments to 1. Something Inside of Me.m3u8
+2025-08-01 11:06:35 - pyanime.downloader.hd2 - [32mINFO[0m - hd2.py:143 - downloading - Starting yt_dlp download for 1. Something Inside of Me.m3u8
+2025-08-01 11:06:36 - pyanime.downloader.hd2 - [32mINFO[0m - hd2.py:146 - downloading - Removed temporary .m3u8 file: 1. Something Inside of Me.m3u8
+2025-08-01 11:06:36 - pyanime.main - [32mINFO[0m - pyanime.py:307 - <module> - Download completed successfully for episode 33384
+2025-08-01 11:06:36 - pyanime.main - [32mINFO[0m - pyanime.py:320 - <module> - Download process completed
+2025-08-01 11:10:25 - pyanime - [32mINFO[0m - logging_config.py:109 - setup_logging - Logging system initialized
+2025-08-01 11:10:25 - pyanime - [32mINFO[0m - logging_config.py:110 - setup_logging - Log level: INFO
+2025-08-01 11:10:25 - pyanime - [32mINFO[0m - logging_config.py:111 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 11:10:25 - pyanime - [32mINFO[0m - logging_config.py:112 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 11:10:25 - pyanime - [32mINFO[0m - logging_config.py:113 - setup_logging - Backup count: 5
+2025-08-01 11:10:25 - pyanime - [32mINFO[0m - logging_config.py:109 - setup_logging - Logging system initialized
+2025-08-01 11:10:25 - pyanime - [32mINFO[0m - logging_config.py:110 - setup_logging - Log level: DEBUG
+2025-08-01 11:10:25 - pyanime - [32mINFO[0m - logging_config.py:111 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 11:10:25 - pyanime - [32mINFO[0m - logging_config.py:112 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 11:10:25 - pyanime - [32mINFO[0m - logging_config.py:113 - setup_logging - Backup count: 5
+2025-08-01 11:10:25 - pyanime - [36mDEBUG[0m - test_logging.py:26 - test_basic_logging - This is a debug message
+2025-08-01 11:10:25 - pyanime - [32mINFO[0m - test_logging.py:27 - test_basic_logging - This is an info message
+2025-08-01 11:10:25 - pyanime - [33mWARNING[0m - test_logging.py:28 - test_basic_logging - This is a warning message
+2025-08-01 11:10:25 - pyanime - [31mERROR[0m - test_logging.py:29 - test_basic_logging - This is an error message
+2025-08-01 11:10:25 - pyanime - [35mCRITICAL[0m - test_logging.py:30 - test_basic_logging - This is a critical message
+2025-08-01 11:10:25 - pyanime.scraper.test - [32mINFO[0m - test_logging.py:44 - test_module_logging - Scraper module test message
+2025-08-01 11:10:25 - pyanime.downloader.test - [32mINFO[0m - test_logging.py:45 - test_module_logging - Downloader module test message
+2025-08-01 11:10:25 - pyanime.config.test - [32mINFO[0m - test_logging.py:46 - test_module_logging - Config module test message
+2025-08-01 11:10:25 - pyanime.test - [36mDEBUG[0m - logging_config.py:146 - wrapper - Entering function: wrapper
+2025-08-01 11:10:25 - pyanime.test - [36mDEBUG[0m - logging_config.py:147 - wrapper - Arguments: args=(5, 3), kwargs={}
+2025-08-01 11:10:25 - pyanime.test - [36mDEBUG[0m - logging_config.py:186 - wrapper - Function test_decorated_function executed in 0.1002 seconds
+2025-08-01 11:10:25 - pyanime.test - [36mDEBUG[0m - logging_config.py:154 - wrapper - Function wrapper completed successfully
+2025-08-01 11:10:25 - pyanime.test - [36mDEBUG[0m - logging_config.py:155 - wrapper - Return value: 8
+2025-08-01 11:10:25 - pyanime.test.errors - [31mERROR[0m - test_logging.py:80 - test_error_logging - Caught an exception: division by zero
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\test_logging.py", line 78, in test_error_logging
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+2025-08-01 11:10:42 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 11:10:42 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 11:10:42 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 11:10:42 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 11:10:42 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 11:10:42 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 11:10:42 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: DEBUG
+2025-08-01 11:10:42 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 11:10:42 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 11:10:42 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 11:10:42 - pyanime - DEBUG - test_logging.py:26 - test_basic_logging - This is a debug message
+2025-08-01 11:10:42 - pyanime - INFO - test_logging.py:27 - test_basic_logging - This is an info message
+2025-08-01 11:10:42 - pyanime - WARNING - test_logging.py:28 - test_basic_logging - This is a warning message
+2025-08-01 11:10:42 - pyanime - ERROR - test_logging.py:29 - test_basic_logging - This is an error message
+2025-08-01 11:10:42 - pyanime - CRITICAL - test_logging.py:30 - test_basic_logging - This is a critical message
+2025-08-01 11:10:42 - pyanime.scraper.test - INFO - test_logging.py:44 - test_module_logging - Scraper module test message
+2025-08-01 11:10:42 - pyanime.downloader.test - INFO - test_logging.py:45 - test_module_logging - Downloader module test message
+2025-08-01 11:10:42 - pyanime.config.test - INFO - test_logging.py:46 - test_module_logging - Config module test message
+2025-08-01 11:10:42 - pyanime.test - DEBUG - logging_config.py:158 - wrapper - Entering function: wrapper
+2025-08-01 11:10:42 - pyanime.test - DEBUG - logging_config.py:159 - wrapper - Arguments: args=(5, 3), kwargs={}
+2025-08-01 11:10:42 - pyanime.test - DEBUG - logging_config.py:198 - wrapper - Function test_decorated_function executed in 0.1007 seconds
+2025-08-01 11:10:42 - pyanime.test - DEBUG - logging_config.py:166 - wrapper - Function wrapper completed successfully
+2025-08-01 11:10:42 - pyanime.test - DEBUG - logging_config.py:167 - wrapper - Return value: 8
+2025-08-01 11:10:42 - pyanime.test.errors - ERROR - test_logging.py:80 - test_error_logging - Caught an exception: division by zero
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\test_logging.py", line 78, in test_error_logging
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+2025-08-01 11:11:37 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 11:11:37 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 11:11:37 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 11:11:37 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 11:11:37 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 11:11:37 - pyanime.main - INFO - pyanime.py:99 - <module> - Starting pyanime application
+2025-08-01 11:12:01 - pyanime.main - INFO - pyanime.py:109 - <module> - User search query: gleipnir
+2025-08-01 11:12:01 - pyanime.main - INFO - pyanime.py:116 - <module> - Searching for anime: gleipnir
+2025-08-01 11:12:01 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:23 - searchAnimeandetails - Searching for anime: gleipnir
+2025-08-01 11:12:03 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:35 - searchAnimeandetails - Found 1 anime blocks in search results
+2025-08-01 11:12:03 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:99 - searchAnimeandetails - Search completed. Found 1 anime results
+2025-08-01 11:12:03 - pyanime.main - INFO - pyanime.py:121 - <module> - Displaying search results: 1 results found
+2025-08-01 11:12:03 - pyanime.main - INFO - pyanime.py:67 - clean_result - Cleaning results: omitting fields ['Imp'] from 1 results
+2025-08-01 11:12:03 - pyanime.main - INFO - pyanime.py:140 - <module> - Single anime found, auto-selecting: Gleipnir
+2025-08-01 11:12:03 - pyanime.main - INFO - pyanime.py:162 - <module> - Fetching anime details for: Gleipnir
+2025-08-01 11:12:03 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:110 - getAnimeDetails - Getting anime details for watch link: /watch/gleipnir-3377
+2025-08-01 11:12:04 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:173 - getAnimeDetails - Successfully extracted anime details for: Gleipnir
+2025-08-01 11:12:04 - pyanime.main - INFO - pyanime.py:164 - <module> - Anime details retrieved successfully
+2025-08-01 11:12:04 - pyanime.main - INFO - pyanime.py:198 - <module> - Fetching episode list for anime: Gleipnir
+2025-08-01 11:12:04 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:25 - getanimepisode - Getting episode list for watch link: /watch/gleipnir-3377
+2025-08-01 11:12:05 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:50 - getanimepisode - Found 13 episode elements
+2025-08-01 11:12:05 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:69 - getanimepisode - Successfully extracted 13 episodes
+2025-08-01 11:12:05 - pyanime.main - INFO - pyanime.py:200 - <module> - Episode list retrieved: 13 episodes found
+2025-08-01 11:12:05 - pyanime.main - INFO - pyanime.py:67 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 13 results
+2025-08-01 11:12:23 - pyanime.main - INFO - pyanime.py:219 - <module> - User episode selection: 1
+2025-08-01 11:12:23 - pyanime.main - INFO - pyanime.py:232 - <module> - Single selection: episode 1
+2025-08-01 11:12:23 - pyanime.main - INFO - pyanime.py:235 - <module> - Selected 1 episodes for download
+2025-08-01 11:12:23 - pyanime.main - INFO - pyanime.py:239 - <module> - Displaying selected episodes
+2025-08-01 11:12:23 - pyanime.main - INFO - pyanime.py:67 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 1 results
+2025-08-01 11:12:23 - pyanime.main - INFO - pyanime.py:264 - <module> - Using default subtitle preference: sub
+2025-08-01 11:12:23 - pyanime.main - INFO - pyanime.py:266 - <module> - Starting download process for 1 episodes
+2025-08-01 11:12:23 - pyanime.main - INFO - pyanime.py:271 - <module> - Processing episode 1/1: Something Inside of Me
+2025-08-01 11:12:23 - pyanime.main - INFO - pyanime.py:274 - <module> - Extracting servers for episode 33384
+2025-08-01 11:12:23 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:30 - serverextractor - Extracting servers for episode: 33384
+2025-08-01 11:12:23 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:34 - serverextractor - Fetching servers from URL: https://hianime.bz/ajax/v2/episode/servers?episodeId=33384
+2025-08-01 11:12:25 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:57 - serverextractor - Found 3 server items for class ['ps_-block-sub', 'servers-sub']
+2025-08-01 11:12:25 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:57 - serverextractor - Found 3 server items for class ['ps_-block-sub', 'servers-dub']
+2025-08-01 11:12:25 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:75 - serverextractor - Extracted 6 servers total for episode 33384
+2025-08-01 11:12:25 - pyanime.main - INFO - pyanime.py:276 - <module> - Found 6 servers for episode
+2025-08-01 11:12:25 - pyanime.main - INFO - pyanime.py:80 - choose_servers - Choosing servers for needs: sub from 6 available servers
+2025-08-01 11:12:25 - pyanime.main - INFO - pyanime.py:83 - choose_servers - Found 3 servers matching needs: sub
+2025-08-01 11:12:25 - pyanime.main - INFO - pyanime.py:284 - <module> - Getting media streams for episode
+2025-08-01 11:12:25 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:102 - streams - Starting streams extraction for episode 33384 on server HD-1
+2025-08-01 11:12:26 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:20 - extract_token - Extracting token from URL: https://megacloud.blog/embed-2/v3/e-1/YiQauLjTpJJS?k=1&autoPlay=0&oa=0&asi=1
+2025-08-01 11:12:28 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:76 - extract_token - Successfully extracted token: BgNF6tUjjySDyXb5aGSZ...
+2025-08-01 11:12:29 - pyanime.scraper.getEpisodestreams - ERROR - getEpisodestreams.py:92 - aes_cryptojs_decrypt - AES decryption error: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 11:12:29 - pyanime.scraper.getEpisodestreams - ERROR - logging_config.py:173 - wrapper - Function aes_cryptojs_decrypt failed with exception: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\config\logging_config.py", line 163, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 11:12:29 - pyanime.scraper.getEpisodestreams - WARNING - getEpisodestreams.py:150 - streams - Main source extraction failed: Incorrect AES key length (64 bytes), attempting fallback...
+2025-08-01 11:12:31 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:172 - streams - Fallback extraction successful
+2025-08-01 11:12:31 - pyanime.main - INFO - pyanime.py:286 - <module> - Parsing m3u8 for episode
+2025-08-01 11:12:31 - pyanime.downloader.hd2 - INFO - hd2.py:77 - m3u8_parsing - Starting m3u8_parsing for: Something Inside of Me
+2025-08-01 11:13:41 - pyanime.downloader.hd2 - WARNING - hd2.py:58 - proxy - Timeout or connection error using native IP: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-08-01 11:13:41 - pyanime.downloader.hd2 - INFO - hd2.py:59 - proxy - Waiting 10 seconds before retrying with proxy...
+2025-08-01 11:15:02 - pyanime.downloader.hd2 - INFO - hd2.py:63 - proxy - Request successful using proxy.
+2025-08-01 11:15:02 - pyanime.downloader.hd2 - INFO - hd2.py:89 - m3u8_parsing - Requested m3u8: https://tubeplx.viddsn.cfd/anime/a9b4ec2eb4ab7b1b9c3392bb5388119d/c95bb2959d43dc119630bf216383b160/master.m3u8 | Status: 200
+2025-08-01 11:15:02 - pyanime.downloader.hd2 - INFO - hd2.py:100 - m3u8_parsing - Found matching quality, fetching final media from: https://tubeplx.viddsn.cfd/anime/a9b4ec2eb4ab7b1b9c3392bb5388119d/c95bb2959d43dc119630bf216383b160/index-f1-v1-a1.m3u8
+2025-08-01 11:16:13 - pyanime.downloader.hd2 - INFO - hd2.py:55 - proxy - Request successful using native IP.
+2025-08-01 11:16:13 - pyanime.downloader.hd2 - INFO - hd2.py:105 - m3u8_parsing - Fetched final media: https://tubeplx.viddsn.cfd/anime/a9b4ec2eb4ab7b1b9c3392bb5388119d/c95bb2959d43dc119630bf216383b160/index-f1-v1-a1.m3u8 | Status: 200
+2025-08-01 11:16:13 - pyanime.main - INFO - pyanime.py:295 - <module> - Starting download for episode: Something Inside of Me
+2025-08-01 11:16:13 - pyanime.downloader.hd2 - INFO - hd2.py:118 - downloading - Starting download for 1. Something Inside of Me in Gleipnir
+2025-08-01 11:16:13 - pyanime.downloader.hd2 - INFO - hd2.py:132 - downloading - Wrote segments to 1. Something Inside of Me.m3u8
+2025-08-01 11:16:14 - pyanime.downloader.hd2 - INFO - hd2.py:143 - downloading - Starting yt_dlp download for 1. Something Inside of Me.m3u8
+2025-08-01 11:16:14 - pyanime.downloader.hd2 - INFO - hd2.py:146 - downloading - Removed temporary .m3u8 file: 1. Something Inside of Me.m3u8
+2025-08-01 11:16:14 - pyanime.main - INFO - pyanime.py:307 - <module> - Download completed successfully for episode 33384
+2025-08-01 11:16:14 - pyanime.main - INFO - pyanime.py:320 - <module> - Download process completed
+2025-08-01 11:21:36 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 11:21:36 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 11:21:36 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 11:21:36 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 11:21:36 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 11:21:36 - pyanime.utils.terminal - INFO - terminal_utils.py:283 - <module> - Testing terminal utilities
+2025-08-01 11:21:36 - pyanime.utils.terminal - INFO - terminal_utils.py:66 - separator - Creating separator line with char: =, length: 115
+2025-08-01 11:21:36 - pyanime.utils.terminal - INFO - terminal_utils.py:66 - separator - Creating separator line with char: =, length: 115
+2025-08-01 11:21:36 - pyanime.utils.terminal - INFO - terminal_utils.py:149 - print_section_header - Printed section header: Terminal Utilities Test
+2025-08-01 11:21:36 - pyanime.utils.terminal - INFO - terminal_utils.py:201 - print_info - Info: This is an info message
+2025-08-01 11:21:36 - pyanime.utils.terminal - INFO - terminal_utils.py:162 - print_success - Success: This is a success message
+2025-08-01 11:21:36 - pyanime.utils.terminal - WARNING - terminal_utils.py:188 - print_warning - Warning: This is a warning message
+2025-08-01 11:21:36 - pyanime.utils.terminal - ERROR - terminal_utils.py:175 - print_error - Error: This is an error message
+2025-08-01 11:21:36 - pyanime.utils.terminal - INFO - terminal_utils.py:66 - separator - Creating separator line with char: -, length: 115
+2025-08-01 11:21:38 - pyanime.utils.terminal - INFO - terminal_utils.py:66 - separator - Creating separator line with char: =, length: 115
+2025-08-01 11:22:35 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 11:22:35 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 11:22:35 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 11:22:35 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 11:22:35 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 11:22:36 - pyanime.main - INFO - pyanime.py:125 - <module> - Starting pyanime application
+2025-08-01 11:22:36 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:22:36 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:22:49 - pyanime.main - INFO - pyanime.py:132 - <module> - User search query: dating story
+2025-08-01 11:22:49 - pyanime.main - INFO - pyanime.py:139 - <module> - Searching for anime: dating story
+2025-08-01 11:22:49 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:23 - searchAnimeandetails - Searching for anime: dating story
+2025-08-01 11:22:50 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:35 - searchAnimeandetails - Found 36 anime blocks in search results
+2025-08-01 11:22:50 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:99 - searchAnimeandetails - Search completed. Found 1 anime results
+2025-08-01 11:22:50 - pyanime.main - INFO - pyanime.py:144 - <module> - Displaying search results: 1 results found
+2025-08-01 11:22:50 - pyanime.main - INFO - pyanime.py:93 - clean_result - Cleaning results: omitting fields ['Imp'] from 1 results
+2025-08-01 11:22:50 - pyanime.main - ERROR - logging_config.py:173 - wrapper - Function clean_result failed with exception: name 'columns' is not defined
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\config\logging_config.py", line 163, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Tutorial\Isolated system\pyanime\bin\pyanime.py", line 99, in clean_result
+    max_col_width = max(10, columns // max_cols_in_row)
+                            ^^^^^^^
+NameError: name 'columns' is not defined
+2025-08-01 11:23:14 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 11:23:14 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 11:23:14 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 11:23:14 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 11:23:14 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 11:23:15 - pyanime.main - INFO - pyanime.py:126 - <module> - Starting pyanime application
+2025-08-01 11:23:15 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:23:15 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:23:21 - pyanime.main - INFO - pyanime.py:133 - <module> - User search query: dating story
+2025-08-01 11:23:21 - pyanime.main - INFO - pyanime.py:140 - <module> - Searching for anime: dating story
+2025-08-01 11:23:21 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:23 - searchAnimeandetails - Searching for anime: dating story
+2025-08-01 11:23:26 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:35 - searchAnimeandetails - Found 36 anime blocks in search results
+2025-08-01 11:23:26 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:99 - searchAnimeandetails - Search completed. Found 1 anime results
+2025-08-01 11:23:26 - pyanime.main - INFO - pyanime.py:145 - <module> - Displaying search results: 1 results found
+2025-08-01 11:23:26 - pyanime.main - INFO - pyanime.py:93 - clean_result - Cleaning results: omitting fields ['Imp'] from 1 results
+2025-08-01 11:23:26 - pyanime.main - INFO - pyanime.py:164 - <module> - Single anime found, auto-selecting: Judo Story
+2025-08-01 11:23:26 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:23:26 - pyanime.main - INFO - pyanime.py:186 - <module> - Fetching anime details for: Judo Story
+2025-08-01 11:23:26 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:110 - getAnimeDetails - Getting anime details for watch link: /watch/judo-story-11846
+2025-08-01 11:23:27 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:173 - getAnimeDetails - Successfully extracted anime details for: Sugata Sanshirou
+2025-08-01 11:23:27 - pyanime.main - INFO - pyanime.py:188 - <module> - Anime details retrieved successfully
+2025-08-01 11:24:41 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 11:24:41 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 11:24:41 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 11:24:41 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 11:24:41 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 11:24:41 - pyanime.main - INFO - pyanime.py:126 - <module> - Starting pyanime application
+2025-08-01 11:24:41 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:24:41 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:24:48 - pyanime.main - INFO - pyanime.py:133 - <module> - User search query: naruto
+2025-08-01 11:24:48 - pyanime.main - INFO - pyanime.py:140 - <module> - Searching for anime: naruto
+2025-08-01 11:24:48 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:23 - searchAnimeandetails - Searching for anime: naruto
+2025-08-01 11:24:49 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:35 - searchAnimeandetails - Found 26 anime blocks in search results
+2025-08-01 11:24:49 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:99 - searchAnimeandetails - Search completed. Found 1 anime results
+2025-08-01 11:24:49 - pyanime.main - INFO - pyanime.py:145 - <module> - Displaying search results: 1 results found
+2025-08-01 11:24:49 - pyanime.main - INFO - pyanime.py:93 - clean_result - Cleaning results: omitting fields ['Imp'] from 1 results
+2025-08-01 11:24:49 - pyanime.main - INFO - pyanime.py:164 - <module> - Single anime found, auto-selecting: Naruto
+2025-08-01 11:24:49 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:24:49 - pyanime.main - INFO - pyanime.py:186 - <module> - Fetching anime details for: Naruto
+2025-08-01 11:24:49 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:110 - getAnimeDetails - Getting anime details for watch link: /watch/naruto-677
+2025-08-01 11:24:51 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:173 - getAnimeDetails - Successfully extracted anime details for: Naruto
+2025-08-01 11:24:51 - pyanime.main - INFO - pyanime.py:188 - <module> - Anime details retrieved successfully
+2025-08-01 11:24:51 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:24:51 - pyanime.main - INFO - pyanime.py:225 - <module> - Fetching episode list for anime: Naruto
+2025-08-01 11:24:51 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:25 - getanimepisode - Getting episode list for watch link: /watch/naruto-677
+2025-08-01 11:24:52 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:50 - getanimepisode - Found 220 episode elements
+2025-08-01 11:24:52 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:69 - getanimepisode - Successfully extracted 220 episodes
+2025-08-01 11:24:52 - pyanime.main - INFO - pyanime.py:227 - <module> - Episode list retrieved: 220 episodes found
+2025-08-01 11:24:52 - pyanime.main - INFO - pyanime.py:93 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 220 results
+2025-08-01 11:24:52 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:25:30 - pyanime.main - INFO - pyanime.py:246 - <module> - User episode selection: 1,5,8
+2025-08-01 11:25:30 - pyanime.main - INFO - pyanime.py:255 - <module> - Multiple selection: episodes [1, 5, 8]
+2025-08-01 11:25:30 - pyanime.main - INFO - pyanime.py:262 - <module> - Selected 3 episodes for download
+2025-08-01 11:25:30 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:25:30 - pyanime.main - INFO - pyanime.py:266 - <module> - Displaying selected episodes
+2025-08-01 11:25:30 - pyanime.main - INFO - pyanime.py:93 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 3 results
+2025-08-01 11:25:30 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:25:30 - pyanime.main - INFO - pyanime.py:291 - <module> - Using default subtitle preference: sub
+2025-08-01 11:25:30 - pyanime.main - INFO - pyanime.py:293 - <module> - Starting download process for 3 episodes
+2025-08-01 11:25:30 - pyanime.main - INFO - pyanime.py:298 - <module> - Processing episode 1/3: Enter: Naruto Uzumaki!
+2025-08-01 11:25:30 - pyanime.main - INFO - pyanime.py:301 - <module> - Extracting servers for episode 12352
+2025-08-01 11:25:30 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:30 - serverextractor - Extracting servers for episode: 12352
+2025-08-01 11:25:30 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:34 - serverextractor - Fetching servers from URL: https://hianime.bz/ajax/v2/episode/servers?episodeId=12352
+2025-08-01 11:25:31 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:57 - serverextractor - Found 3 server items for class ['ps_-block-sub', 'servers-sub']
+2025-08-01 11:25:31 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:57 - serverextractor - Found 3 server items for class ['ps_-block-sub', 'servers-dub']
+2025-08-01 11:25:31 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:75 - serverextractor - Extracted 6 servers total for episode 12352
+2025-08-01 11:25:31 - pyanime.main - INFO - pyanime.py:303 - <module> - Found 6 servers for episode
+2025-08-01 11:25:31 - pyanime.main - INFO - pyanime.py:107 - choose_servers - Choosing servers for needs: sub from 6 available servers
+2025-08-01 11:25:31 - pyanime.main - INFO - pyanime.py:110 - choose_servers - Found 3 servers matching needs: sub
+2025-08-01 11:25:31 - pyanime.main - INFO - pyanime.py:311 - <module> - Getting media streams for episode
+2025-08-01 11:25:31 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:102 - streams - Starting streams extraction for episode 12352 on server HD-1
+2025-08-01 11:25:33 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:20 - extract_token - Extracting token from URL: https://megacloud.blog/embed-2/v3/e-1/I9iNVeWKKt7O?k=1&autoPlay=0&oa=0&asi=1
+2025-08-01 11:25:34 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:76 - extract_token - Successfully extracted token: RnIotYVRz221pS9FM2yY...
+2025-08-01 11:25:35 - pyanime.scraper.getEpisodestreams - ERROR - getEpisodestreams.py:92 - aes_cryptojs_decrypt - AES decryption error: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 11:25:35 - pyanime.scraper.getEpisodestreams - ERROR - logging_config.py:173 - wrapper - Function aes_cryptojs_decrypt failed with exception: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\config\logging_config.py", line 163, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 11:25:35 - pyanime.scraper.getEpisodestreams - WARNING - getEpisodestreams.py:150 - streams - Main source extraction failed: Incorrect AES key length (64 bytes), attempting fallback...
+2025-08-01 11:25:38 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:172 - streams - Fallback extraction successful
+2025-08-01 11:25:38 - pyanime.main - INFO - pyanime.py:313 - <module> - Parsing m3u8 for episode
+2025-08-01 11:25:38 - pyanime.downloader.hd2 - INFO - hd2.py:77 - m3u8_parsing - Starting m3u8_parsing for: Enter: Naruto Uzumaki!
+2025-08-01 11:26:49 - pyanime.downloader.hd2 - INFO - hd2.py:55 - proxy - Request successful using native IP.
+2025-08-01 11:26:49 - pyanime.downloader.hd2 - INFO - hd2.py:89 - m3u8_parsing - Requested m3u8: https://tubeplx.viddsn.cfd/anime/71a3cb155f8dc89bf3d0365288219936/86fef3660e9f19a15eb6948b7dad8499/master.m3u8 | Status: 200
+2025-08-01 11:26:49 - pyanime.downloader.hd2 - WARNING - hd2.py:107 - m3u8_parsing - Requested quality 1080p not found
+2025-08-01 11:26:49 - pyanime.main - ERROR - pyanime.py:317 - <module> - Failed to parse m3u8 for episode 12352
+2025-08-01 11:26:49 - pyanime.main - INFO - pyanime.py:298 - <module> - Processing episode 2/3: You Failed! Kakashi's Final Decision
+2025-08-01 11:26:49 - pyanime.main - INFO - pyanime.py:301 - <module> - Extracting servers for episode 12356
+2025-08-01 11:26:49 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:30 - serverextractor - Extracting servers for episode: 12356
+2025-08-01 11:26:49 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:34 - serverextractor - Fetching servers from URL: https://hianime.bz/ajax/v2/episode/servers?episodeId=12356
+2025-08-01 11:26:51 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:57 - serverextractor - Found 3 server items for class ['ps_-block-sub', 'servers-sub']
+2025-08-01 11:26:51 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:57 - serverextractor - Found 3 server items for class ['ps_-block-sub', 'servers-dub']
+2025-08-01 11:26:51 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:75 - serverextractor - Extracted 6 servers total for episode 12356
+2025-08-01 11:26:51 - pyanime.main - INFO - pyanime.py:303 - <module> - Found 6 servers for episode
+2025-08-01 11:26:51 - pyanime.main - INFO - pyanime.py:107 - choose_servers - Choosing servers for needs: sub from 6 available servers
+2025-08-01 11:26:51 - pyanime.main - INFO - pyanime.py:110 - choose_servers - Found 3 servers matching needs: sub
+2025-08-01 11:26:51 - pyanime.main - INFO - pyanime.py:311 - <module> - Getting media streams for episode
+2025-08-01 11:26:51 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:102 - streams - Starting streams extraction for episode 12356 on server HD-1
+2025-08-01 11:26:54 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:20 - extract_token - Extracting token from URL: https://megacloud.blog/embed-2/v3/e-1/eTubAE2i41Zq?k=1&autoPlay=0&oa=0&asi=1
+2025-08-01 11:26:55 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:76 - extract_token - Successfully extracted token: TrVpvpz9skzaagOMhGqV...
+2025-08-01 11:26:56 - pyanime.scraper.getEpisodestreams - ERROR - getEpisodestreams.py:92 - aes_cryptojs_decrypt - AES decryption error: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 11:26:56 - pyanime.scraper.getEpisodestreams - ERROR - logging_config.py:173 - wrapper - Function aes_cryptojs_decrypt failed with exception: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\config\logging_config.py", line 163, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 11:26:56 - pyanime.scraper.getEpisodestreams - WARNING - getEpisodestreams.py:150 - streams - Main source extraction failed: Incorrect AES key length (64 bytes), attempting fallback...
+2025-08-01 11:26:59 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:172 - streams - Fallback extraction successful
+2025-08-01 11:26:59 - pyanime.main - INFO - pyanime.py:313 - <module> - Parsing m3u8 for episode
+2025-08-01 11:26:59 - pyanime.downloader.hd2 - INFO - hd2.py:77 - m3u8_parsing - Starting m3u8_parsing for: You Failed! Kakashi's Final Decision
+2025-08-01 11:28:11 - pyanime.downloader.hd2 - INFO - hd2.py:55 - proxy - Request successful using native IP.
+2025-08-01 11:28:11 - pyanime.downloader.hd2 - INFO - hd2.py:89 - m3u8_parsing - Requested m3u8: https://tubeplx.viddsn.cfd/anime/71a3cb155f8dc89bf3d0365288219936/a18a066adb713c4acd3311e342a84982/master.m3u8 | Status: 200
+2025-08-01 11:28:11 - pyanime.downloader.hd2 - WARNING - hd2.py:107 - m3u8_parsing - Requested quality 1080p not found
+2025-08-01 11:28:11 - pyanime.main - ERROR - pyanime.py:317 - <module> - Failed to parse m3u8 for episode 12356
+2025-08-01 11:28:11 - pyanime.main - INFO - pyanime.py:298 - <module> - Processing episode 3/3: The Oath of Pain
+2025-08-01 11:28:11 - pyanime.main - INFO - pyanime.py:301 - <module> - Extracting servers for episode 12359
+2025-08-01 11:28:11 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:30 - serverextractor - Extracting servers for episode: 12359
+2025-08-01 11:28:11 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:34 - serverextractor - Fetching servers from URL: https://hianime.bz/ajax/v2/episode/servers?episodeId=12359
+2025-08-01 11:28:12 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:57 - serverextractor - Found 3 server items for class ['ps_-block-sub', 'servers-sub']
+2025-08-01 11:28:12 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:57 - serverextractor - Found 3 server items for class ['ps_-block-sub', 'servers-dub']
+2025-08-01 11:28:12 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:75 - serverextractor - Extracted 6 servers total for episode 12359
+2025-08-01 11:28:12 - pyanime.main - INFO - pyanime.py:303 - <module> - Found 6 servers for episode
+2025-08-01 11:28:12 - pyanime.main - INFO - pyanime.py:107 - choose_servers - Choosing servers for needs: sub from 6 available servers
+2025-08-01 11:28:12 - pyanime.main - INFO - pyanime.py:110 - choose_servers - Found 3 servers matching needs: sub
+2025-08-01 11:28:12 - pyanime.main - INFO - pyanime.py:311 - <module> - Getting media streams for episode
+2025-08-01 11:28:12 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:102 - streams - Starting streams extraction for episode 12359 on server HD-1
+2025-08-01 11:28:14 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:20 - extract_token - Extracting token from URL: https://megacloud.blog/embed-2/v3/e-1/ZpM9tE5zBavL?k=1&autoPlay=0&oa=0&asi=1
+2025-08-01 11:28:15 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:76 - extract_token - Successfully extracted token: BResvdR31Qpwcdw4kDLr...
+2025-08-01 11:28:15 - pyanime.scraper.getEpisodestreams - ERROR - getEpisodestreams.py:92 - aes_cryptojs_decrypt - AES decryption error: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 11:28:15 - pyanime.scraper.getEpisodestreams - ERROR - logging_config.py:173 - wrapper - Function aes_cryptojs_decrypt failed with exception: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\config\logging_config.py", line 163, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 11:28:15 - pyanime.scraper.getEpisodestreams - WARNING - getEpisodestreams.py:150 - streams - Main source extraction failed: Incorrect AES key length (64 bytes), attempting fallback...
+2025-08-01 11:28:18 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:172 - streams - Fallback extraction successful
+2025-08-01 11:28:18 - pyanime.main - INFO - pyanime.py:313 - <module> - Parsing m3u8 for episode
+2025-08-01 11:28:18 - pyanime.downloader.hd2 - INFO - hd2.py:77 - m3u8_parsing - Starting m3u8_parsing for: The Oath of Pain
+2025-08-01 11:29:49 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 11:29:49 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 11:29:49 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 11:29:49 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 11:29:49 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 11:29:49 - pyanime.main - INFO - pyanime.py:126 - <module> - Starting pyanime application
+2025-08-01 11:29:49 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:29:49 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:29:55 - pyanime.main - INFO - pyanime.py:133 - <module> - User search query: gleipnir
+2025-08-01 11:29:55 - pyanime.main - INFO - pyanime.py:140 - <module> - Searching for anime: gleipnir
+2025-08-01 11:29:55 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:23 - searchAnimeandetails - Searching for anime: gleipnir
+2025-08-01 11:29:56 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:35 - searchAnimeandetails - Found 1 anime blocks in search results
+2025-08-01 11:29:56 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:99 - searchAnimeandetails - Search completed. Found 1 anime results
+2025-08-01 11:29:56 - pyanime.main - INFO - pyanime.py:145 - <module> - Displaying search results: 1 results found
+2025-08-01 11:29:56 - pyanime.main - INFO - pyanime.py:93 - clean_result - Cleaning results: omitting fields ['Imp'] from 1 results
+2025-08-01 11:29:56 - pyanime.main - INFO - pyanime.py:164 - <module> - Single anime found, auto-selecting: Gleipnir
+2025-08-01 11:29:56 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:29:56 - pyanime.main - INFO - pyanime.py:186 - <module> - Fetching anime details for: Gleipnir
+2025-08-01 11:29:56 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:110 - getAnimeDetails - Getting anime details for watch link: /watch/gleipnir-3377
+2025-08-01 11:30:00 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 11:30:00 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 11:30:00 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 11:30:00 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 11:30:00 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 11:30:00 - pyanime.main - INFO - pyanime.py:126 - <module> - Starting pyanime application
+2025-08-01 11:30:00 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:30:00 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:30:07 - pyanime.main - INFO - pyanime.py:133 - <module> - User search query: naruto
+2025-08-01 11:30:07 - pyanime.main - INFO - pyanime.py:140 - <module> - Searching for anime: naruto
+2025-08-01 11:30:07 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:23 - searchAnimeandetails - Searching for anime: naruto
+2025-08-01 11:30:10 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:35 - searchAnimeandetails - Found 26 anime blocks in search results
+2025-08-01 11:30:10 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:99 - searchAnimeandetails - Search completed. Found 1 anime results
+2025-08-01 11:30:10 - pyanime.main - INFO - pyanime.py:145 - <module> - Displaying search results: 1 results found
+2025-08-01 11:30:10 - pyanime.main - INFO - pyanime.py:93 - clean_result - Cleaning results: omitting fields ['Imp'] from 1 results
+2025-08-01 11:30:10 - pyanime.main - INFO - pyanime.py:164 - <module> - Single anime found, auto-selecting: Naruto
+2025-08-01 11:30:10 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:30:10 - pyanime.main - INFO - pyanime.py:186 - <module> - Fetching anime details for: Naruto
+2025-08-01 11:30:10 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:110 - getAnimeDetails - Getting anime details for watch link: /watch/naruto-677
+2025-08-01 11:31:54 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 11:31:54 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 11:31:54 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 11:31:54 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 11:31:54 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 11:31:55 - pyanime.main - INFO - pyanime.py:126 - <module> - Starting pyanime application
+2025-08-01 11:31:55 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:31:55 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:32:04 - pyanime.main - INFO - pyanime.py:133 - <module> - User search query: naruto
+2025-08-01 11:32:04 - pyanime.main - INFO - pyanime.py:140 - <module> - Searching for anime: naruto
+2025-08-01 11:32:04 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:23 - searchAnimeandetails - Searching for anime: naruto
+2025-08-01 11:32:06 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:35 - searchAnimeandetails - Found 26 anime blocks in search results
+2025-08-01 11:32:06 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:99 - searchAnimeandetails - Search completed. Found 26 anime results
+2025-08-01 11:32:06 - pyanime.main - INFO - pyanime.py:145 - <module> - Displaying search results: 26 results found
+2025-08-01 11:32:06 - pyanime.main - INFO - pyanime.py:93 - clean_result - Cleaning results: omitting fields ['Imp'] from 26 results
+2025-08-01 11:32:06 - pyanime.main - INFO - pyanime.py:173 - <module> - Multiple anime found, requesting user selection
+2025-08-01 11:32:06 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:32:54 - pyanime.main - INFO - pyanime.py:176 - <module> - User selected anime number: 1
+2025-08-01 11:32:54 - pyanime.main - INFO - pyanime.py:179 - <module> - Selected anime: Road of Naruto
+2025-08-01 11:32:54 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:32:54 - pyanime.main - INFO - pyanime.py:186 - <module> - Fetching anime details for: Road of Naruto
+2025-08-01 11:32:54 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:110 - getAnimeDetails - Getting anime details for watch link: /watch/road-of-naruto-18220
+2025-08-01 11:32:55 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:173 - getAnimeDetails - Successfully extracted anime details for: Road of Naruto
+2025-08-01 11:32:55 - pyanime.main - INFO - pyanime.py:188 - <module> - Anime details retrieved successfully
+2025-08-01 11:32:55 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:32:55 - pyanime.main - INFO - pyanime.py:225 - <module> - Fetching episode list for anime: Road of Naruto
+2025-08-01 11:32:55 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:25 - getanimepisode - Getting episode list for watch link: /watch/road-of-naruto-18220
+2025-08-01 11:32:56 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:50 - getanimepisode - Found 1 episode elements
+2025-08-01 11:32:56 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:69 - getanimepisode - Successfully extracted 1 episodes
+2025-08-01 11:32:56 - pyanime.main - INFO - pyanime.py:227 - <module> - Episode list retrieved: 1 episodes found
+2025-08-01 11:32:56 - pyanime.main - INFO - pyanime.py:93 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 1 results
+2025-08-01 11:32:56 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:32:59 - pyanime.main - INFO - pyanime.py:246 - <module> - User episode selection: 1
+2025-08-01 11:32:59 - pyanime.main - INFO - pyanime.py:259 - <module> - Single selection: episode 1
+2025-08-01 11:32:59 - pyanime.main - INFO - pyanime.py:262 - <module> - Selected 1 episodes for download
+2025-08-01 11:32:59 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:32:59 - pyanime.main - INFO - pyanime.py:266 - <module> - Displaying selected episodes
+2025-08-01 11:32:59 - pyanime.main - INFO - pyanime.py:93 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 1 results
+2025-08-01 11:32:59 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:32:59 - pyanime.main - INFO - pyanime.py:291 - <module> - Using default subtitle preference: sub
+2025-08-01 11:32:59 - pyanime.main - INFO - pyanime.py:293 - <module> - Starting download process for 1 episodes
+2025-08-01 11:32:59 - pyanime.main - INFO - pyanime.py:298 - <module> - Processing episode 1/1: Full
+2025-08-01 11:32:59 - pyanime.main - INFO - pyanime.py:301 - <module> - Extracting servers for episode 94736
+2025-08-01 11:32:59 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:30 - serverextractor - Extracting servers for episode: 94736
+2025-08-01 11:32:59 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:34 - serverextractor - Fetching servers from URL: https://hianime.bz/ajax/v2/episode/servers?episodeId=94736
+2025-08-01 11:33:00 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:57 - serverextractor - Found 2 server items for class ['ps_-block-sub', 'servers-sub']
+2025-08-01 11:33:00 - pyanime.scraper.getEpisodestreams - WARNING - getEpisodestreams.py:73 - serverextractor - There is NO dub for this Episode 94736
+2025-08-01 11:33:00 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:75 - serverextractor - Extracted 2 servers total for episode 94736
+2025-08-01 11:33:00 - pyanime.main - INFO - pyanime.py:303 - <module> - Found 2 servers for episode
+2025-08-01 11:33:00 - pyanime.main - INFO - pyanime.py:107 - choose_servers - Choosing servers for needs: sub from 2 available servers
+2025-08-01 11:33:00 - pyanime.main - INFO - pyanime.py:110 - choose_servers - Found 2 servers matching needs: sub
+2025-08-01 11:33:00 - pyanime.main - INFO - pyanime.py:311 - <module> - Getting media streams for episode
+2025-08-01 11:33:00 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:102 - streams - Starting streams extraction for episode 94736 on server HD-1
+2025-08-01 11:33:02 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:20 - extract_token - Extracting token from URL: https://megacloud.blog/embed-2/v3/e-1/qsE0oEsyxjH7?k=1&autoPlay=0&oa=0&asi=1
+2025-08-01 11:33:03 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:76 - extract_token - Successfully extracted token: wqZ4Hxzi76mf7mRYtVMQ...
+2025-08-01 11:33:04 - pyanime.scraper.getEpisodestreams - ERROR - getEpisodestreams.py:92 - aes_cryptojs_decrypt - AES decryption error: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 11:33:04 - pyanime.scraper.getEpisodestreams - ERROR - logging_config.py:173 - wrapper - Function aes_cryptojs_decrypt failed with exception: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\config\logging_config.py", line 163, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 11:33:04 - pyanime.scraper.getEpisodestreams - WARNING - getEpisodestreams.py:150 - streams - Main source extraction failed: Incorrect AES key length (64 bytes), attempting fallback...
+2025-08-01 11:33:07 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:172 - streams - Fallback extraction successful
+2025-08-01 11:33:07 - pyanime.main - INFO - pyanime.py:313 - <module> - Parsing m3u8 for episode
+2025-08-01 11:33:07 - pyanime.downloader.hd2 - INFO - hd2.py:77 - m3u8_parsing - Starting m3u8_parsing for: Full
+2025-08-01 11:34:17 - pyanime.downloader.hd2 - INFO - hd2.py:55 - proxy - Request successful using native IP.
+2025-08-01 11:34:17 - pyanime.downloader.hd2 - INFO - hd2.py:89 - m3u8_parsing - Requested m3u8: https://tubeplx.viddsn.cfd/anime/abfd676ad3a01f1e8860fecff9f5b8e0/24b6c059b19995653d0d9a088478a067/master.m3u8 | Status: 200
+2025-08-01 11:34:17 - pyanime.downloader.hd2 - INFO - hd2.py:100 - m3u8_parsing - Found matching quality, fetching final media from: https://tubeplx.viddsn.cfd/anime/abfd676ad3a01f1e8860fecff9f5b8e0/24b6c059b19995653d0d9a088478a067/index-f1-v1-a1.m3u8
+2025-08-01 11:35:29 - pyanime.downloader.hd2 - INFO - hd2.py:55 - proxy - Request successful using native IP.
+2025-08-01 11:35:29 - pyanime.downloader.hd2 - INFO - hd2.py:105 - m3u8_parsing - Fetched final media: https://tubeplx.viddsn.cfd/anime/abfd676ad3a01f1e8860fecff9f5b8e0/24b6c059b19995653d0d9a088478a067/index-f1-v1-a1.m3u8 | Status: 200
+2025-08-01 11:35:29 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:35:29 - pyanime.main - INFO - pyanime.py:322 - <module> - Starting download for episode: Full
+2025-08-01 11:35:29 - pyanime.downloader.hd2 - INFO - hd2.py:118 - downloading - Starting download for 1. Full in Road of Naruto
+2025-08-01 11:35:29 - pyanime.downloader.hd2 - INFO - hd2.py:132 - downloading - Wrote segments to 1. Full.m3u8
+2025-08-01 11:35:29 - pyanime.downloader.hd2 - INFO - hd2.py:143 - downloading - Starting yt_dlp download for 1. Full.m3u8
+2025-08-01 11:40:45 - pyanime.downloader.hd2 - INFO - hd2.py:146 - downloading - Removed temporary .m3u8 file: 1. Full.m3u8
+2025-08-01 11:40:45 - pyanime.main - INFO - pyanime.py:334 - <module> - Download completed successfully for episode 94736
+2025-08-01 11:40:45 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:40:45 - pyanime.main - INFO - pyanime.py:56 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:40:45 - pyanime.main - INFO - pyanime.py:347 - <module> - Download process completed
+2025-08-01 11:53:31 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 11:53:31 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 11:53:31 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 11:53:31 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 11:53:31 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 11:53:35 - pyanime.main - INFO - pyanime.py:220 - <module> - Starting pyanime application
+2025-08-01 11:53:35 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:53:35 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:53:59 - pyanime.main - INFO - pyanime.py:228 - <module> - User search query: our dating story
+2025-08-01 11:53:59 - pyanime.main - INFO - pyanime.py:235 - <module> - Searching for anime: our dating story
+2025-08-01 11:53:59 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:23 - searchAnimeandetails - Searching for anime: our dating story
+2025-08-01 11:54:01 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:35 - searchAnimeandetails - Found 36 anime blocks in search results
+2025-08-01 11:54:01 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:99 - searchAnimeandetails - Search completed. Found 36 anime results
+2025-08-01 11:54:01 - pyanime.main - INFO - pyanime.py:241 - <module> - Displaying search results: 36 results found
+2025-08-01 11:54:01 - pyanime.main - INFO - pyanime.py:94 - clean_result - Cleaning results: omitting fields ['Imp'] from 36 results
+2025-08-01 11:54:01 - pyanime.main - INFO - pyanime.py:271 - <module> - Multiple anime found, requesting user selection
+2025-08-01 11:54:01 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 11:54:53 - pyanime.main - INFO - pyanime.py:275 - <module> - User selected anime number: 1
+2025-08-01 11:54:53 - pyanime.main - INFO - pyanime.py:280 - <module> - Selected anime: Our Dating Story: The Experienced You and The Inexperienced Me, Kimizero
+2025-08-01 11:54:53 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 150
+2025-08-01 11:54:53 - pyanime.main - INFO - pyanime.py:294 - <module> - Fetching anime details for: Our Dating Story: The Experienced You and The Inexperienced Me, Kimizero
+2025-08-01 11:54:53 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:110 - getAnimeDetails - Getting anime details for watch link: /watch/our-dating-story-the-experienced-you-and-the-inexperienced-me-kimizero-18577
+2025-08-01 11:54:54 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:173 - getAnimeDetails - Successfully extracted anime details for: Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi.
+2025-08-01 11:54:54 - pyanime.main - INFO - pyanime.py:297 - <module> - Anime details retrieved successfully
+2025-08-01 11:54:54 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 150
+2025-08-01 11:54:54 - pyanime.main - INFO - pyanime.py:345 - <module> - Fetching episode list for anime: Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi.
+2025-08-01 11:54:54 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:25 - getanimepisode - Getting episode list for watch link: /watch/our-dating-story-the-experienced-you-and-the-inexperienced-me-kimizero-18577
+2025-08-01 11:54:55 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:50 - getanimepisode - Found 12 episode elements
+2025-08-01 11:54:55 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:69 - getanimepisode - Successfully extracted 12 episodes
+2025-08-01 11:54:55 - pyanime.main - INFO - pyanime.py:348 - <module> - Episode list retrieved: 12 episodes found
+2025-08-01 11:54:55 - pyanime.main - INFO - pyanime.py:94 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 12 results
+2025-08-01 11:54:55 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 150
+2025-08-01 11:55:26 - pyanime.main - INFO - pyanime.py:376 - <module> - User episode selection: 8
+2025-08-01 11:55:26 - pyanime.main - INFO - pyanime.py:402 - <module> - Single selection: episode 8
+2025-08-01 11:55:26 - pyanime.main - INFO - pyanime.py:408 - <module> - Selected 1 episodes for download
+2025-08-01 11:55:26 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 150
+2025-08-01 11:55:26 - pyanime.main - INFO - pyanime.py:419 - <module> - Displaying selected episodes
+2025-08-01 11:55:26 - pyanime.main - INFO - pyanime.py:94 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 1 results
+2025-08-01 11:55:26 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 150
+2025-08-01 11:55:26 - pyanime.main - INFO - pyanime.py:441 - <module> - Using default subtitle preference: sub
+2025-08-01 11:55:26 - pyanime.main - INFO - pyanime.py:446 - <module> - Starting download process for 1 episodes
+2025-08-01 11:55:26 - pyanime.main - INFO - pyanime.py:452 - <module> - Processing episode 1/1: Our Survival Story: The Experienced You and the Inexperienced Us Play Survival Games
+2025-08-01 11:55:26 - pyanime.main - INFO - pyanime.py:458 - <module> - Extracting servers for episode 110594
+2025-08-01 11:55:26 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:30 - serverextractor - Extracting servers for episode: 110594
+2025-08-01 11:55:26 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:34 - serverextractor - Fetching servers from URL: https://hianime.bz/ajax/v2/episode/servers?episodeId=110594
+2025-08-01 11:55:27 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:57 - serverextractor - Found 3 server items for class ['ps_-block-sub', 'servers-sub']
+2025-08-01 11:55:27 - pyanime.scraper.getEpisodestreams - WARNING - getEpisodestreams.py:73 - serverextractor - There is NO dub for this Episode 110594
+2025-08-01 11:55:27 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:75 - serverextractor - Extracted 3 servers total for episode 110594
+2025-08-01 11:55:27 - pyanime.main - INFO - pyanime.py:461 - <module> - Found 3 servers for episode
+2025-08-01 11:55:27 - pyanime.main - INFO - pyanime.py:108 - choose_servers - Choosing servers for needs: sub from 3 available servers
+2025-08-01 11:55:27 - pyanime.main - INFO - pyanime.py:111 - choose_servers - Found 3 servers matching needs: sub
+2025-08-01 11:55:27 - pyanime.main - INFO - pyanime.py:469 - <module> - Getting media streams for episode
+2025-08-01 11:55:27 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:102 - streams - Starting streams extraction for episode 110594 on server HD-1
+2025-08-01 11:55:30 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:20 - extract_token - Extracting token from URL: https://megacloud.blog/embed-2/v3/e-1/KyVkJ2Ea6YlS?k=1&autoPlay=0&oa=0&asi=1
+2025-08-01 11:55:31 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:76 - extract_token - Successfully extracted token: z6uW62LEzfStYbtYt1zF...
+2025-08-01 11:55:32 - pyanime.scraper.getEpisodestreams - ERROR - getEpisodestreams.py:92 - aes_cryptojs_decrypt - AES decryption error: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 11:55:32 - pyanime.scraper.getEpisodestreams - ERROR - logging_config.py:173 - wrapper - Function aes_cryptojs_decrypt failed with exception: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\config\logging_config.py", line 163, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 11:55:32 - pyanime.scraper.getEpisodestreams - WARNING - getEpisodestreams.py:150 - streams - Main source extraction failed: Incorrect AES key length (64 bytes), attempting fallback...
+2025-08-01 11:55:37 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:172 - streams - Fallback extraction successful
+2025-08-01 11:55:37 - pyanime.main - INFO - pyanime.py:472 - <module> - Parsing m3u8 for episode
+2025-08-01 11:55:37 - pyanime.downloader.hd2 - INFO - hd2.py:77 - m3u8_parsing - Starting m3u8_parsing for: Our Survival Story: The Experienced You and the Inexperienced Us Play Survival Games
+2025-08-01 11:56:49 - pyanime.downloader.hd2 - INFO - hd2.py:55 - proxy - Request successful using native IP.
+2025-08-01 11:56:49 - pyanime.downloader.hd2 - INFO - hd2.py:89 - m3u8_parsing - Requested m3u8: https://tubeplx.viddsn.cfd/anime/0eda666a2704efc2e5b37dd165607c0f/37a2d23b6444b2cb40f2f2a38c954d30/master.m3u8 | Status: 200
+2025-08-01 11:56:49 - pyanime.downloader.hd2 - INFO - hd2.py:100 - m3u8_parsing - Found matching quality, fetching final media from: https://tubeplx.viddsn.cfd/anime/0eda666a2704efc2e5b37dd165607c0f/37a2d23b6444b2cb40f2f2a38c954d30/index-f1-v1-a1.m3u8
+2025-08-01 11:58:00 - pyanime.downloader.hd2 - INFO - hd2.py:55 - proxy - Request successful using native IP.
+2025-08-01 11:58:00 - pyanime.downloader.hd2 - INFO - hd2.py:105 - m3u8_parsing - Fetched final media: https://tubeplx.viddsn.cfd/anime/0eda666a2704efc2e5b37dd165607c0f/37a2d23b6444b2cb40f2f2a38c954d30/index-f1-v1-a1.m3u8 | Status: 200
+2025-08-01 11:58:00 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 136
+2025-08-01 11:58:00 - pyanime.main - INFO - pyanime.py:482 - <module> - Starting download for episode: Our Survival Story: The Experienced You and the Inexperienced Us Play Survival Games
+2025-08-01 11:58:00 - pyanime.downloader.hd2 - INFO - hd2.py:118 - downloading - Starting download for 8. Our Survival Story: The Experienced You and the Inexperienced Us Play Survival Games in Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi.
+2025-08-01 11:58:00 - pyanime.downloader.hd2 - INFO - hd2.py:132 - downloading - Wrote segments to 8. Our Survival Story: The Experienced You and the Inexperienced Us Play Survival Games.m3u8
+2025-08-01 11:58:00 - pyanime.downloader.hd2 - INFO - hd2.py:143 - downloading - Starting yt_dlp download for 8. Our Survival Story: The Experienced You and the Inexperienced Us Play Survival Games.m3u8
+2025-08-01 11:58:01 - pyanime.downloader.hd2 - ERROR - hd2.py:149 - downloading - Exception in downloading function: [0;31mERROR:[0m [generic] Unable to download webpage: Bad URL: /C|%5CUsers%5CAcer/.animecache/Keikenzumi%20na%20Kimi%20to,%20Keiken%20Zero%20na%20Ore%20ga,%20Otsukiai%20suru%20Hanashi./8.%20Our%20Survival%20Story|%20The%20Experienced%20You%20and%20the%20Inexperienced%20Us%20Play%20Survival%20Games.m3u8 (caused by TransportError('Bad URL: /C|%5CUsers%5CAcer/.animecache/Keikenzumi%20na%20Kimi%20to,%20Keiken%20Zero%20na%20Ore%20ga,%20Otsukiai%20suru%20Hanashi./8.%20Our%20Survival%20Story|%20The%20Experienced%20You%20and%20the%20Inexperienced%20Us%20Play%20Survival%20Games.m3u8'))
+Traceback (most recent call last):
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\networking\_urllib.py", line 400, in _send
+    res = opener.open(urllib_req, timeout=self._calculate_timeout(request))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\urllib\request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\urllib\request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\urllib\request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\urllib\request.py", line 1484, in file_open
+    return self.open_local_file(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\urllib\request.py", line 1504, in open_local_file
+    localfile = url2pathname(filename)
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\nturl2path.py", line 33, in url2pathname
+    raise OSError(error)
+OSError: Bad URL: /C|%5CUsers%5CAcer/.animecache/Keikenzumi%20na%20Kimi%20to,%20Keiken%20Zero%20na%20Ore%20ga,%20Otsukiai%20suru%20Hanashi./8.%20Our%20Survival%20Story|%20The%20Experienced%20You%20and%20the%20Inexperienced%20Us%20Play%20Survival%20Games.m3u8
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\extractor\common.py", line 904, in _request_webpage
+    return self._downloader.urlopen(self._create_request(url_or_request, data, headers, query, extensions))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\YoutubeDL.py", line 4186, in urlopen
+    return self._request_director.send(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\networking\common.py", line 117, in send
+    response = handler.send(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\networking\_helper.py", line 208, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\networking\common.py", line 359, in send
+    return self._send(request)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\networking\_urllib.py", line 423, in _send
+    handle_response_read_exceptions(e)
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\networking\_urllib.py", line 331, in handle_response_read_exceptions
+    raise TransportError(cause=e) from e
+yt_dlp.networking.exceptions.TransportError: Bad URL: /C|%5CUsers%5CAcer/.animecache/Keikenzumi%20na%20Kimi%20to,%20Keiken%20Zero%20na%20Ore%20ga,%20Otsukiai%20suru%20Hanashi./8.%20Our%20Survival%20Story|%20The%20Experienced%20You%20and%20the%20Inexperienced%20Us%20Play%20Survival%20Games.m3u8
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\YoutubeDL.py", line 1653, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\YoutubeDL.py", line 1788, in __extract_info
+    ie_result = ie.extract(url)
+                ^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\extractor\common.py", line 748, in extract
+    ie_result = self._real_extract(url)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\extractor\generic.py", line 2418, in _real_extract
+    full_response = self._request_webpage(url, video_id, headers=filter_dict({
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\extractor\common.py", line 917, in _request_webpage
+    raise ExtractorError(errmsg, cause=err)
+yt_dlp.utils.ExtractorError: [generic] Unable to download webpage: Bad URL: /C|%5CUsers%5CAcer/.animecache/Keikenzumi%20na%20Kimi%20to,%20Keiken%20Zero%20na%20Ore%20ga,%20Otsukiai%20suru%20Hanashi./8.%20Our%20Survival%20Story|%20The%20Experienced%20You%20and%20the%20Inexperienced%20Us%20Play%20Survival%20Games.m3u8 (caused by TransportError('Bad URL: /C|%5CUsers%5CAcer/.animecache/Keikenzumi%20na%20Kimi%20to,%20Keiken%20Zero%20na%20Ore%20ga,%20Otsukiai%20suru%20Hanashi./8.%20Our%20Survival%20Story|%20The%20Experienced%20You%20and%20the%20Inexperienced%20Us%20Play%20Survival%20Games.m3u8'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Downloader\hd2.py", line 144, in downloading
+    ydl.download([f"file:///{cache}/{fixed_Name}.m3u8"])
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\YoutubeDL.py", line 3634, in download
+    self.__download_wrapper(self.extract_info)(
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\YoutubeDL.py", line 3607, in wrapper
+    res = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\YoutubeDL.py", line 1642, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\YoutubeDL.py", line 1671, in wrapper
+    self.report_error(str(e), e.format_traceback())
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\YoutubeDL.py", line 1111, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\yt_dlp\YoutubeDL.py", line 1050, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m [generic] Unable to download webpage: Bad URL: /C|%5CUsers%5CAcer/.animecache/Keikenzumi%20na%20Kimi%20to,%20Keiken%20Zero%20na%20Ore%20ga,%20Otsukiai%20suru%20Hanashi./8.%20Our%20Survival%20Story|%20The%20Experienced%20You%20and%20the%20Inexperienced%20Us%20Play%20Survival%20Games.m3u8 (caused by TransportError('Bad URL: /C|%5CUsers%5CAcer/.animecache/Keikenzumi%20na%20Kimi%20to,%20Keiken%20Zero%20na%20Ore%20ga,%20Otsukiai%20suru%20Hanashi./8.%20Our%20Survival%20Story|%20The%20Experienced%20You%20and%20the%20Inexperienced%20Us%20Play%20Survival%20Games.m3u8'))
+2025-08-01 11:58:01 - pyanime.main - ERROR - pyanime.py:488 - <module> - Download failed for episode 110594
+2025-08-01 11:58:01 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 136
+2025-08-01 12:01:11 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 12:01:11 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 12:01:11 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 12:01:11 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 12:01:11 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 12:01:11 - pyanime.main - INFO - pyanime.py:220 - <module> - Starting pyanime application
+2025-08-01 12:01:11 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 136
+2025-08-01 12:01:11 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 136
+2025-08-01 12:01:18 - pyanime.main - INFO - pyanime.py:228 - <module> - User search query: our dating story
+2025-08-01 12:01:18 - pyanime.main - INFO - pyanime.py:235 - <module> - Searching for anime: our dating story
+2025-08-01 12:01:18 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:23 - searchAnimeandetails - Searching for anime: our dating story
+2025-08-01 12:01:19 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:35 - searchAnimeandetails - Found 36 anime blocks in search results
+2025-08-01 12:01:19 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:99 - searchAnimeandetails - Search completed. Found 36 anime results
+2025-08-01 12:01:19 - pyanime.main - INFO - pyanime.py:241 - <module> - Displaying search results: 36 results found
+2025-08-01 12:01:19 - pyanime.main - INFO - pyanime.py:94 - clean_result - Cleaning results: omitting fields ['Imp'] from 36 results
+2025-08-01 12:01:19 - pyanime.main - INFO - pyanime.py:271 - <module> - Multiple anime found, requesting user selection
+2025-08-01 12:01:19 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 136
+2025-08-01 12:01:20 - pyanime.main - INFO - pyanime.py:275 - <module> - User selected anime number: 1
+2025-08-01 12:01:20 - pyanime.main - INFO - pyanime.py:280 - <module> - Selected anime: Our Dating Story: The Experienced You and The Inexperienced Me, Kimizero
+2025-08-01 12:01:21 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 136
+2025-08-01 12:01:21 - pyanime.main - INFO - pyanime.py:294 - <module> - Fetching anime details for: Our Dating Story: The Experienced You and The Inexperienced Me, Kimizero
+2025-08-01 12:01:21 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:110 - getAnimeDetails - Getting anime details for watch link: /watch/our-dating-story-the-experienced-you-and-the-inexperienced-me-kimizero-18577
+2025-08-01 12:01:21 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:173 - getAnimeDetails - Successfully extracted anime details for: Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi.
+2025-08-01 12:01:21 - pyanime.main - INFO - pyanime.py:297 - <module> - Anime details retrieved successfully
+2025-08-01 12:01:21 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 136
+2025-08-01 12:01:21 - pyanime.main - INFO - pyanime.py:345 - <module> - Fetching episode list for anime: Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi.
+2025-08-01 12:01:21 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:25 - getanimepisode - Getting episode list for watch link: /watch/our-dating-story-the-experienced-you-and-the-inexperienced-me-kimizero-18577
+2025-08-01 12:01:22 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:50 - getanimepisode - Found 12 episode elements
+2025-08-01 12:01:22 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:69 - getanimepisode - Successfully extracted 12 episodes
+2025-08-01 12:01:22 - pyanime.main - INFO - pyanime.py:348 - <module> - Episode list retrieved: 12 episodes found
+2025-08-01 12:01:22 - pyanime.main - INFO - pyanime.py:94 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 12 results
+2025-08-01 12:01:22 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 136
+2025-08-01 12:01:28 - pyanime.main - INFO - pyanime.py:376 - <module> - User episode selection: 8
+2025-08-01 12:01:28 - pyanime.main - INFO - pyanime.py:402 - <module> - Single selection: episode 8
+2025-08-01 12:01:28 - pyanime.main - INFO - pyanime.py:408 - <module> - Selected 1 episodes for download
+2025-08-01 12:01:28 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 136
+2025-08-01 12:01:28 - pyanime.main - INFO - pyanime.py:419 - <module> - Displaying selected episodes
+2025-08-01 12:01:28 - pyanime.main - INFO - pyanime.py:94 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 1 results
+2025-08-01 12:01:28 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 136
+2025-08-01 12:01:28 - pyanime.main - INFO - pyanime.py:441 - <module> - Using default subtitle preference: sub
+2025-08-01 12:01:28 - pyanime.main - INFO - pyanime.py:446 - <module> - Starting download process for 1 episodes
+2025-08-01 12:01:28 - pyanime.main - INFO - pyanime.py:452 - <module> - Processing episode 1/1: Our Survival Story: The Experienced You and the Inexperienced Us Play Survival Games
+2025-08-01 12:01:28 - pyanime.main - INFO - pyanime.py:458 - <module> - Extracting servers for episode 110594
+2025-08-01 12:01:28 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:30 - serverextractor - Extracting servers for episode: 110594
+2025-08-01 12:01:28 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:34 - serverextractor - Fetching servers from URL: https://hianime.bz/ajax/v2/episode/servers?episodeId=110594
+2025-08-01 12:01:29 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:57 - serverextractor - Found 3 server items for class ['ps_-block-sub', 'servers-sub']
+2025-08-01 12:01:29 - pyanime.scraper.getEpisodestreams - WARNING - getEpisodestreams.py:73 - serverextractor - There is NO dub for this Episode 110594
+2025-08-01 12:01:29 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:75 - serverextractor - Extracted 3 servers total for episode 110594
+2025-08-01 12:01:29 - pyanime.main - INFO - pyanime.py:461 - <module> - Found 3 servers for episode
+2025-08-01 12:01:29 - pyanime.main - INFO - pyanime.py:108 - choose_servers - Choosing servers for needs: sub from 3 available servers
+2025-08-01 12:01:29 - pyanime.main - INFO - pyanime.py:111 - choose_servers - Found 3 servers matching needs: sub
+2025-08-01 12:01:29 - pyanime.main - INFO - pyanime.py:469 - <module> - Getting media streams for episode
+2025-08-01 12:01:29 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:102 - streams - Starting streams extraction for episode 110594 on server HD-1
+2025-08-01 12:01:31 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:20 - extract_token - Extracting token from URL: https://megacloud.blog/embed-2/v3/e-1/KyVkJ2Ea6YlS?k=1&autoPlay=0&oa=0&asi=1
+2025-08-01 12:01:32 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:76 - extract_token - Successfully extracted token: BctC3aFvmBDO3Nx0LbDA...
+2025-08-01 12:01:33 - pyanime.scraper.getEpisodestreams - ERROR - getEpisodestreams.py:92 - aes_cryptojs_decrypt - AES decryption error: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 12:01:33 - pyanime.scraper.getEpisodestreams - ERROR - logging_config.py:173 - wrapper - Function aes_cryptojs_decrypt failed with exception: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\config\logging_config.py", line 163, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 12:01:33 - pyanime.scraper.getEpisodestreams - WARNING - getEpisodestreams.py:150 - streams - Main source extraction failed: Incorrect AES key length (64 bytes), attempting fallback...
+2025-08-01 12:01:35 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:172 - streams - Fallback extraction successful
+2025-08-01 12:01:35 - pyanime.main - INFO - pyanime.py:472 - <module> - Parsing m3u8 for episode
+2025-08-01 12:01:35 - pyanime.downloader.hd2 - INFO - hd2.py:77 - m3u8_parsing - Starting m3u8_parsing for: Our Survival Story: The Experienced You and the Inexperienced Us Play Survival Games
+2025-08-01 12:02:46 - pyanime.downloader.hd2 - INFO - hd2.py:55 - proxy - Request successful using native IP.
+2025-08-01 12:02:46 - pyanime.downloader.hd2 - INFO - hd2.py:89 - m3u8_parsing - Requested m3u8: https://tubeplx.viddsn.cfd/anime/0eda666a2704efc2e5b37dd165607c0f/37a2d23b6444b2cb40f2f2a38c954d30/master.m3u8 | Status: 200
+2025-08-01 12:02:46 - pyanime.downloader.hd2 - INFO - hd2.py:100 - m3u8_parsing - Found matching quality, fetching final media from: https://tubeplx.viddsn.cfd/anime/0eda666a2704efc2e5b37dd165607c0f/37a2d23b6444b2cb40f2f2a38c954d30/index-f1-v1-a1.m3u8
+2025-08-01 12:03:57 - pyanime.downloader.hd2 - WARNING - hd2.py:58 - proxy - Timeout or connection error using native IP: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-08-01 12:03:57 - pyanime.downloader.hd2 - INFO - hd2.py:59 - proxy - Waiting 10 seconds before retrying with proxy...
+2025-08-01 12:05:18 - pyanime.downloader.hd2 - INFO - hd2.py:63 - proxy - Request successful using proxy.
+2025-08-01 12:05:18 - pyanime.downloader.hd2 - INFO - hd2.py:105 - m3u8_parsing - Fetched final media: https://tubeplx.viddsn.cfd/anime/0eda666a2704efc2e5b37dd165607c0f/37a2d23b6444b2cb40f2f2a38c954d30/index-f1-v1-a1.m3u8 | Status: 200
+2025-08-01 12:05:18 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 136
+2025-08-01 12:05:18 - pyanime.main - INFO - pyanime.py:482 - <module> - Starting download for episode: Our Survival Story: The Experienced You and the Inexperienced Us Play Survival Games
+2025-08-01 12:05:18 - pyanime.downloader.hd2 - INFO - hd2.py:118 - downloading - Starting download for 8. Our Survival Story: The Experienced You and the Inexperienced Us Play Survival Games in Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi.
+2025-08-01 12:05:18 - pyanime.downloader.hd2 - INFO - hd2.py:137 - downloading - Wrote segments to 8__Our_Survival_Story_The_Experienced_You_and_the_Inexperienced_Us_Play_Survival_Games.m3u8
+2025-08-01 12:05:18 - pyanime.downloader.hd2 - INFO - hd2.py:148 - downloading - Starting yt_dlp download for 8__Our_Survival_Story_The_Experienced_You_and_the_Inexperienced_Us_Play_Survival_Games.m3u8
+2025-08-01 12:11:20 - pyanime.downloader.hd2 - INFO - hd2.py:162 - downloading - Removed temporary .m3u8 file: 8__Our_Survival_Story_The_Experienced_You_and_the_Inexperienced_Us_Play_Survival_Games.m3u8
+2025-08-01 12:11:20 - pyanime.main - INFO - pyanime.py:496 - <module> - Download completed successfully for episode 110594
+2025-08-01 12:11:20 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 136
+2025-08-01 12:11:20 - pyanime.main - INFO - pyanime.py:507 - <module> - Download process completed
+2025-08-01 12:11:20 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 136
+2025-08-01 12:11:20 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 136
+2025-08-01 12:21:23 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 12:21:23 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 12:21:23 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 12:21:23 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 12:21:23 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 12:21:23 - pyanime.main - INFO - pyanime.py:220 - <module> - Starting pyanime application
+2025-08-01 12:21:23 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 178
+2025-08-01 12:21:23 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 178
+2025-08-01 12:21:51 - pyanime.main - INFO - pyanime.py:228 - <module> - User search query: blue lock
+2025-08-01 12:21:51 - pyanime.main - INFO - pyanime.py:235 - <module> - Searching for anime: blue lock
+2025-08-01 12:21:51 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:23 - searchAnimeandetails - Searching for anime: blue lock
+2025-08-01 12:21:52 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:35 - searchAnimeandetails - Found 36 anime blocks in search results
+2025-08-01 12:21:52 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:99 - searchAnimeandetails - Search completed. Found 36 anime results
+2025-08-01 12:21:52 - pyanime.main - INFO - pyanime.py:241 - <module> - Displaying search results: 36 results found
+2025-08-01 12:21:52 - pyanime.main - INFO - pyanime.py:94 - clean_result - Cleaning results: omitting fields ['Imp'] from 36 results
+2025-08-01 12:21:52 - pyanime.main - INFO - pyanime.py:271 - <module> - Multiple anime found, requesting user selection
+2025-08-01 12:21:52 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 178
+2025-08-01 12:22:17 - pyanime.main - INFO - pyanime.py:275 - <module> - User selected anime number: 2
+2025-08-01 12:22:17 - pyanime.main - INFO - pyanime.py:280 - <module> - Selected anime: Blue Gender
+2025-08-01 12:22:17 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:22:17 - pyanime.main - INFO - pyanime.py:294 - <module> - Fetching anime details for: Blue Gender
+2025-08-01 12:22:17 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:110 - getAnimeDetails - Getting anime details for watch link: /watch/blue-gender-3372
+2025-08-01 12:22:18 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:173 - getAnimeDetails - Successfully extracted anime details for: Blue Gender
+2025-08-01 12:22:18 - pyanime.main - INFO - pyanime.py:297 - <module> - Anime details retrieved successfully
+2025-08-01 12:22:18 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:22:18 - pyanime.main - INFO - pyanime.py:345 - <module> - Fetching episode list for anime: Blue Gender
+2025-08-01 12:22:18 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:25 - getanimepisode - Getting episode list for watch link: /watch/blue-gender-3372
+2025-08-01 12:22:19 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:50 - getanimepisode - Found 26 episode elements
+2025-08-01 12:22:19 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:69 - getanimepisode - Successfully extracted 26 episodes
+2025-08-01 12:22:19 - pyanime.main - INFO - pyanime.py:348 - <module> - Episode list retrieved: 26 episodes found
+2025-08-01 12:22:19 - pyanime.main - INFO - pyanime.py:94 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 26 results
+2025-08-01 12:22:19 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:22:26 - pyanime.main - INFO - pyanime.py:376 - <module> - User episode selection: 1
+2025-08-01 12:22:26 - pyanime.main - INFO - pyanime.py:402 - <module> - Single selection: episode 1
+2025-08-01 12:22:26 - pyanime.main - INFO - pyanime.py:408 - <module> - Selected 1 episodes for download
+2025-08-01 12:22:26 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:22:26 - pyanime.main - INFO - pyanime.py:419 - <module> - Displaying selected episodes
+2025-08-01 12:22:26 - pyanime.main - INFO - pyanime.py:94 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 1 results
+2025-08-01 12:22:26 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:22:26 - pyanime.main - INFO - pyanime.py:441 - <module> - Using default subtitle preference: sub
+2025-08-01 12:22:26 - pyanime.main - INFO - pyanime.py:446 - <module> - Starting download process for 1 episodes
+2025-08-01 12:22:26 - pyanime.main - INFO - pyanime.py:452 - <module> - Processing episode 1/1: Episode 1
+2025-08-01 12:22:26 - pyanime.main - INFO - pyanime.py:458 - <module> - Extracting servers for episode 77862
+2025-08-01 12:22:26 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:30 - serverextractor - Extracting servers for episode: 77862
+2025-08-01 12:22:26 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:34 - serverextractor - Fetching servers from URL: https://hianime.bz/ajax/v2/episode/servers?episodeId=77862
+2025-08-01 12:22:27 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:57 - serverextractor - Found 3 server items for class ['ps_-block-sub', 'servers-sub']
+2025-08-01 12:22:27 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:57 - serverextractor - Found 3 server items for class ['ps_-block-sub', 'servers-dub']
+2025-08-01 12:22:27 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:75 - serverextractor - Extracted 6 servers total for episode 77862
+2025-08-01 12:22:27 - pyanime.main - INFO - pyanime.py:461 - <module> - Found 6 servers for episode
+2025-08-01 12:22:27 - pyanime.main - INFO - pyanime.py:108 - choose_servers - Choosing servers for needs: sub from 6 available servers
+2025-08-01 12:22:27 - pyanime.main - INFO - pyanime.py:111 - choose_servers - Found 3 servers matching needs: sub
+2025-08-01 12:22:27 - pyanime.main - INFO - pyanime.py:469 - <module> - Getting media streams for episode
+2025-08-01 12:22:27 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:102 - streams - Starting streams extraction for episode 77862 on server HD-1
+2025-08-01 12:22:29 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:20 - extract_token - Extracting token from URL: https://megacloud.blog/embed-2/v3/e-1/b3BRj06vT12v?k=1&autoPlay=0&oa=0&asi=1
+2025-08-01 12:22:30 - pyanime.scraper.tokenextractor - WARNING - tokenextractor.py:78 - extract_token - No token found in response
+2025-08-01 12:22:31 - pyanime.scraper.getEpisodestreams - WARNING - getEpisodestreams.py:150 - streams - Main source extraction failed: 403 Client Error: Forbidden for url: https://megacloud.blog/embed-2/v3/e-1/getSources?id=b3BRj06vT12v&_k=None, attempting fallback...
+2025-08-01 12:22:34 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:172 - streams - Fallback extraction successful
+2025-08-01 12:22:34 - pyanime.main - INFO - pyanime.py:472 - <module> - Parsing m3u8 for episode
+2025-08-01 12:22:34 - pyanime.downloader.hd2 - INFO - hd2.py:77 - m3u8_parsing - Starting m3u8_parsing for: Episode 1
+2025-08-01 12:23:45 - pyanime.downloader.hd2 - INFO - hd2.py:55 - proxy - Request successful using native IP.
+2025-08-01 12:23:45 - pyanime.downloader.hd2 - INFO - hd2.py:89 - m3u8_parsing - Requested m3u8: https://tubeplx.viddsn.cfd/anime/37d0b499fb84a552c17fcbb1442d7895/86c13acc68e022b9a85895f855eb4d90/master.m3u8 | Status: 200
+2025-08-01 12:23:45 - pyanime.downloader.hd2 - WARNING - hd2.py:107 - m3u8_parsing - Requested quality 1080p not found
+2025-08-01 12:23:45 - pyanime.main - ERROR - pyanime.py:477 - <module> - Failed to parse m3u8 for episode 77862
+2025-08-01 12:23:45 - pyanime.main - INFO - pyanime.py:507 - <module> - Download process completed
+2025-08-01 12:23:45 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:23:45 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:25:52 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 12:25:52 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 12:25:52 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 12:25:52 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 12:25:52 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 12:25:52 - pyanime.main - INFO - pyanime.py:220 - <module> - Starting pyanime application
+2025-08-01 12:25:52 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:25:52 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:25:57 - pyanime.main - INFO - pyanime.py:228 - <module> - User search query: blue lock
+2025-08-01 12:25:57 - pyanime.main - INFO - pyanime.py:235 - <module> - Searching for anime: blue lock
+2025-08-01 12:25:57 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:23 - searchAnimeandetails - Searching for anime: blue lock
+2025-08-01 12:25:59 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:35 - searchAnimeandetails - Found 36 anime blocks in search results
+2025-08-01 12:25:59 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:99 - searchAnimeandetails - Search completed. Found 36 anime results
+2025-08-01 12:25:59 - pyanime.main - INFO - pyanime.py:241 - <module> - Displaying search results: 36 results found
+2025-08-01 12:25:59 - pyanime.main - INFO - pyanime.py:94 - clean_result - Cleaning results: omitting fields ['Imp'] from 36 results
+2025-08-01 12:25:59 - pyanime.main - INFO - pyanime.py:271 - <module> - Multiple anime found, requesting user selection
+2025-08-01 12:25:59 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:26:12 - pyanime.main - INFO - pyanime.py:275 - <module> - User selected anime number: 2
+2025-08-01 12:26:12 - pyanime.main - INFO - pyanime.py:280 - <module> - Selected anime: Blue Gender
+2025-08-01 12:26:12 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:26:12 - pyanime.main - INFO - pyanime.py:294 - <module> - Fetching anime details for: Blue Gender
+2025-08-01 12:26:12 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:110 - getAnimeDetails - Getting anime details for watch link: /watch/blue-gender-3372
+2025-08-01 12:26:13 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:173 - getAnimeDetails - Successfully extracted anime details for: Blue Gender
+2025-08-01 12:26:13 - pyanime.main - INFO - pyanime.py:297 - <module> - Anime details retrieved successfully
+2025-08-01 12:26:13 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:26:13 - pyanime.main - INFO - pyanime.py:345 - <module> - Fetching episode list for anime: Blue Gender
+2025-08-01 12:26:13 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:25 - getanimepisode - Getting episode list for watch link: /watch/blue-gender-3372
+2025-08-01 12:26:13 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:50 - getanimepisode - Found 26 episode elements
+2025-08-01 12:26:13 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:69 - getanimepisode - Successfully extracted 26 episodes
+2025-08-01 12:26:13 - pyanime.main - INFO - pyanime.py:348 - <module> - Episode list retrieved: 26 episodes found
+2025-08-01 12:26:13 - pyanime.main - INFO - pyanime.py:94 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 26 results
+2025-08-01 12:26:13 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:26:16 - pyanime.main - INFO - pyanime.py:376 - <module> - User episode selection: 1
+2025-08-01 12:26:16 - pyanime.main - INFO - pyanime.py:402 - <module> - Single selection: episode 1
+2025-08-01 12:26:16 - pyanime.main - INFO - pyanime.py:408 - <module> - Selected 1 episodes for download
+2025-08-01 12:26:16 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:26:16 - pyanime.main - INFO - pyanime.py:419 - <module> - Displaying selected episodes
+2025-08-01 12:26:16 - pyanime.main - INFO - pyanime.py:94 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 1 results
+2025-08-01 12:26:16 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:26:16 - pyanime.main - INFO - pyanime.py:441 - <module> - Using default subtitle preference: sub
+2025-08-01 12:26:16 - pyanime.main - INFO - pyanime.py:446 - <module> - Starting download process for 1 episodes
+2025-08-01 12:26:16 - pyanime.main - INFO - pyanime.py:452 - <module> - Processing episode 1/1: Episode 1
+2025-08-01 12:26:16 - pyanime.main - INFO - pyanime.py:458 - <module> - Extracting servers for episode 77862
+2025-08-01 12:26:16 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:30 - serverextractor - Extracting servers for episode: 77862
+2025-08-01 12:26:16 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:34 - serverextractor - Fetching servers from URL: https://hianime.bz/ajax/v2/episode/servers?episodeId=77862
+2025-08-01 12:26:18 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:57 - serverextractor - Found 3 server items for class ['ps_-block-sub', 'servers-sub']
+2025-08-01 12:26:18 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:57 - serverextractor - Found 3 server items for class ['ps_-block-sub', 'servers-dub']
+2025-08-01 12:26:18 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:75 - serverextractor - Extracted 6 servers total for episode 77862
+2025-08-01 12:26:18 - pyanime.main - INFO - pyanime.py:461 - <module> - Found 6 servers for episode
+2025-08-01 12:26:18 - pyanime.main - INFO - pyanime.py:108 - choose_servers - Choosing servers for needs: sub from 6 available servers
+2025-08-01 12:26:18 - pyanime.main - INFO - pyanime.py:111 - choose_servers - Found 3 servers matching needs: sub
+2025-08-01 12:26:18 - pyanime.main - INFO - pyanime.py:469 - <module> - Getting media streams for episode
+2025-08-01 12:26:18 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:102 - streams - Starting streams extraction for episode 77862 on server HD-1
+2025-08-01 12:26:19 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:20 - extract_token - Extracting token from URL: https://megacloud.blog/embed-2/v3/e-1/b3BRj06vT12v?k=1&autoPlay=0&oa=0&asi=1
+2025-08-01 12:26:20 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:76 - extract_token - Successfully extracted token: iW0eoW1FUMgZ8Y68ptxg...
+2025-08-01 12:26:21 - pyanime.scraper.getEpisodestreams - ERROR - getEpisodestreams.py:92 - aes_cryptojs_decrypt - AES decryption error: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 12:26:21 - pyanime.scraper.getEpisodestreams - ERROR - logging_config.py:173 - wrapper - Function aes_cryptojs_decrypt failed with exception: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\config\logging_config.py", line 163, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 12:26:21 - pyanime.scraper.getEpisodestreams - WARNING - getEpisodestreams.py:150 - streams - Main source extraction failed: Incorrect AES key length (64 bytes), attempting fallback...
+2025-08-01 12:26:24 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:172 - streams - Fallback extraction successful
+2025-08-01 12:26:24 - pyanime.main - INFO - pyanime.py:472 - <module> - Parsing m3u8 for episode
+2025-08-01 12:26:24 - pyanime.downloader.hd2 - INFO - hd2.py:77 - m3u8_parsing - Starting m3u8_parsing for: Episode 1
+2025-08-01 12:27:35 - pyanime.downloader.hd2 - INFO - hd2.py:55 - proxy - Request successful using native IP.
+2025-08-01 12:27:35 - pyanime.downloader.hd2 - INFO - hd2.py:89 - m3u8_parsing - Requested m3u8: https://tubeplx.viddsn.cfd/anime/37d0b499fb84a552c17fcbb1442d7895/86c13acc68e022b9a85895f855eb4d90/master.m3u8 | Status: 200
+2025-08-01 12:27:35 - pyanime.downloader.hd2 - WARNING - hd2.py:107 - m3u8_parsing - Requested quality 720p not found
+2025-08-01 12:27:35 - pyanime.main - ERROR - pyanime.py:477 - <module> - Failed to parse m3u8 for episode 77862
+2025-08-01 12:27:35 - pyanime.main - INFO - pyanime.py:507 - <module> - Download process completed
+2025-08-01 12:27:35 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:27:35 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:32:29 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 12:32:29 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 12:32:29 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 12:32:29 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 12:32:29 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 12:32:30 - pyanime.main - INFO - pyanime.py:220 - <module> - Starting pyanime application
+2025-08-01 12:32:30 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:32:30 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:32:42 - pyanime.main - INFO - pyanime.py:228 - <module> - User search query: blue lock
+2025-08-01 12:32:42 - pyanime.main - INFO - pyanime.py:235 - <module> - Searching for anime: blue lock
+2025-08-01 12:32:42 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:23 - searchAnimeandetails - Searching for anime: blue lock
+2025-08-01 12:32:43 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:35 - searchAnimeandetails - Found 36 anime blocks in search results
+2025-08-01 12:32:43 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:99 - searchAnimeandetails - Search completed. Found 36 anime results
+2025-08-01 12:32:43 - pyanime.main - INFO - pyanime.py:241 - <module> - Displaying search results: 36 results found
+2025-08-01 12:32:43 - pyanime.main - INFO - pyanime.py:94 - clean_result - Cleaning results: omitting fields ['Imp'] from 36 results
+2025-08-01 12:32:43 - pyanime.main - INFO - pyanime.py:271 - <module> - Multiple anime found, requesting user selection
+2025-08-01 12:32:43 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:32:49 - pyanime.main - INFO - pyanime.py:275 - <module> - User selected anime number: 2
+2025-08-01 12:32:49 - pyanime.main - INFO - pyanime.py:280 - <module> - Selected anime: Blue Gender
+2025-08-01 12:32:49 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:32:49 - pyanime.main - INFO - pyanime.py:294 - <module> - Fetching anime details for: Blue Gender
+2025-08-01 12:32:49 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:110 - getAnimeDetails - Getting anime details for watch link: /watch/blue-gender-3372
+2025-08-01 12:32:50 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:173 - getAnimeDetails - Successfully extracted anime details for: Blue Gender
+2025-08-01 12:32:50 - pyanime.main - INFO - pyanime.py:297 - <module> - Anime details retrieved successfully
+2025-08-01 12:32:50 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:32:50 - pyanime.main - INFO - pyanime.py:345 - <module> - Fetching episode list for anime: Blue Gender
+2025-08-01 12:32:50 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:25 - getanimepisode - Getting episode list for watch link: /watch/blue-gender-3372
+2025-08-01 12:32:51 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:50 - getanimepisode - Found 26 episode elements
+2025-08-01 12:32:51 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:69 - getanimepisode - Successfully extracted 26 episodes
+2025-08-01 12:32:51 - pyanime.main - INFO - pyanime.py:348 - <module> - Episode list retrieved: 26 episodes found
+2025-08-01 12:32:51 - pyanime.main - INFO - pyanime.py:94 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 26 results
+2025-08-01 12:32:51 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:32:54 - pyanime.main - INFO - pyanime.py:376 - <module> - User episode selection: 1
+2025-08-01 12:32:54 - pyanime.main - INFO - pyanime.py:402 - <module> - Single selection: episode 1
+2025-08-01 12:32:54 - pyanime.main - INFO - pyanime.py:408 - <module> - Selected 1 episodes for download
+2025-08-01 12:32:54 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:32:54 - pyanime.main - INFO - pyanime.py:419 - <module> - Displaying selected episodes
+2025-08-01 12:32:54 - pyanime.main - INFO - pyanime.py:94 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 1 results
+2025-08-01 12:32:54 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:32:54 - pyanime.main - INFO - pyanime.py:441 - <module> - Using default subtitle preference: sub
+2025-08-01 12:32:54 - pyanime.main - INFO - pyanime.py:446 - <module> - Starting download process for 1 episodes
+2025-08-01 12:32:54 - pyanime.main - INFO - pyanime.py:452 - <module> - Processing episode 1/1: Episode 1
+2025-08-01 12:32:54 - pyanime.main - INFO - pyanime.py:458 - <module> - Extracting servers for episode 77862
+2025-08-01 12:32:54 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:30 - serverextractor - Extracting servers for episode: 77862
+2025-08-01 12:32:54 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:34 - serverextractor - Fetching servers from URL: https://hianime.bz/ajax/v2/episode/servers?episodeId=77862
+2025-08-01 12:32:56 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:57 - serverextractor - Found 3 server items for class ['ps_-block-sub', 'servers-sub']
+2025-08-01 12:32:56 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:57 - serverextractor - Found 3 server items for class ['ps_-block-sub', 'servers-dub']
+2025-08-01 12:32:56 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:75 - serverextractor - Extracted 6 servers total for episode 77862
+2025-08-01 12:32:56 - pyanime.main - INFO - pyanime.py:461 - <module> - Found 6 servers for episode
+2025-08-01 12:32:56 - pyanime.main - INFO - pyanime.py:108 - choose_servers - Choosing servers for needs: sub from 6 available servers
+2025-08-01 12:32:56 - pyanime.main - INFO - pyanime.py:111 - choose_servers - Found 3 servers matching needs: sub
+2025-08-01 12:32:56 - pyanime.main - INFO - pyanime.py:469 - <module> - Getting media streams for episode
+2025-08-01 12:32:56 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:102 - streams - Starting streams extraction for episode 77862 on server HD-1
+2025-08-01 12:32:58 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:20 - extract_token - Extracting token from URL: https://megacloud.blog/embed-2/v3/e-1/b3BRj06vT12v?k=1&autoPlay=0&oa=0&asi=1
+2025-08-01 12:32:59 - pyanime.scraper.tokenextractor - INFO - tokenextractor.py:76 - extract_token - Successfully extracted token: vMSzilTOHsso0Q5nX9Fa...
+2025-08-01 12:33:00 - pyanime.scraper.getEpisodestreams - ERROR - getEpisodestreams.py:92 - aes_cryptojs_decrypt - AES decryption error: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 12:33:00 - pyanime.scraper.getEpisodestreams - ERROR - logging_config.py:173 - wrapper - Function aes_cryptojs_decrypt failed with exception: Incorrect AES key length (64 bytes)
+Traceback (most recent call last):
+  File "D:\Tutorial\Isolated system\pyanime\config\logging_config.py", line 163, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Tutorial\Isolated system\pyanime\providers\Hianime\Scraper\getEpisodestreams.py", line 84, in aes_cryptojs_decrypt
+    cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC, iv)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\_mode_cbc.py", line 274, in _create_cbc_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\Python\Python312\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (64 bytes)
+2025-08-01 12:33:00 - pyanime.scraper.getEpisodestreams - WARNING - getEpisodestreams.py:150 - streams - Main source extraction failed: Incorrect AES key length (64 bytes), attempting fallback...
+2025-08-01 12:33:02 - pyanime.scraper.getEpisodestreams - INFO - getEpisodestreams.py:172 - streams - Fallback extraction successful
+2025-08-01 12:33:02 - pyanime.main - INFO - pyanime.py:472 - <module> - Parsing m3u8 for episode
+2025-08-01 12:33:02 - pyanime.downloader.hd2 - INFO - hd2.py:77 - m3u8_parsing - Starting m3u8_parsing for: Episode 1
+2025-08-01 12:34:14 - pyanime.downloader.hd2 - INFO - hd2.py:55 - proxy - Request successful using native IP.
+2025-08-01 12:34:14 - pyanime.downloader.hd2 - INFO - hd2.py:89 - m3u8_parsing - Requested m3u8: https://tubeplx.viddsn.cfd/anime/37d0b499fb84a552c17fcbb1442d7895/86c13acc68e022b9a85895f855eb4d90/master.m3u8 | Status: 200
+2025-08-01 12:34:14 - pyanime.downloader.hd2 - INFO - hd2.py:108 - m3u8_parsing - Available qualities in m3u8:
+2025-08-01 12:34:14 - pyanime.downloader.hd2 - INFO - hd2.py:112 - m3u8_parsing -   Quality 1: 480p
+2025-08-01 12:34:14 - pyanime.downloader.hd2 - WARNING - hd2.py:124 - m3u8_parsing - Requested quality 720p not found. Using highest available quality: 480p
+2025-08-01 12:34:14 - pyanime.downloader.hd2 - INFO - hd2.py:133 - m3u8_parsing - Selected quality: 480p, fetching final media from: https://tubeplx.viddsn.cfd/anime/37d0b499fb84a552c17fcbb1442d7895/86c13acc68e022b9a85895f855eb4d90/index-v1-a1.m3u8
+2025-08-01 12:35:25 - pyanime.downloader.hd2 - INFO - hd2.py:55 - proxy - Request successful using native IP.
+2025-08-01 12:35:25 - pyanime.downloader.hd2 - INFO - hd2.py:138 - m3u8_parsing - Fetched final media: https://tubeplx.viddsn.cfd/anime/37d0b499fb84a552c17fcbb1442d7895/86c13acc68e022b9a85895f855eb4d90/index-v1-a1.m3u8 | Status: 200
+2025-08-01 12:35:25 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:35:25 - pyanime.main - INFO - pyanime.py:482 - <module> - Starting download for episode: Episode 1
+2025-08-01 12:35:25 - pyanime.downloader.hd2 - INFO - hd2.py:149 - downloading - Starting download for 1. Episode 1 in Blue Gender
+2025-08-01 12:35:25 - pyanime.downloader.hd2 - INFO - hd2.py:168 - downloading - Wrote segments to 1__Episode_1.m3u8
+2025-08-01 12:35:25 - pyanime.downloader.hd2 - INFO - hd2.py:179 - downloading - Starting yt_dlp download for 1__Episode_1.m3u8
+2025-08-01 12:43:28 - pyanime.downloader.hd2 - INFO - hd2.py:193 - downloading - Removed temporary .m3u8 file: 1__Episode_1.m3u8
+2025-08-01 12:43:28 - pyanime.main - INFO - pyanime.py:496 - <module> - Download completed successfully for episode 77862
+2025-08-01 12:43:28 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:43:28 - pyanime.main - INFO - pyanime.py:507 - <module> - Download process completed
+2025-08-01 12:43:28 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:43:28 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:48:58 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 12:48:58 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 12:48:58 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 12:48:58 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 12:48:58 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 12:49:01 - pyanime.main - INFO - pyanime.py:220 - <module> - Starting pyanime application
+2025-08-01 12:49:01 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:49:01 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:53:51 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 12:53:51 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 12:53:51 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 12:53:51 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 12:53:51 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 12:53:51 - pyanime.main - INFO - pyanime.py:220 - <module> - Starting pyanime application
+2025-08-01 12:53:51 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:53:51 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:53:53 - pyanime.main - INFO - pyanime.py:229 - signal_handler - Application interrupted by user (Ctrl+C)
+2025-08-01 12:53:53 - pyanime.main - WARNING - pyanime.py:53 - separator - Creating separator line with type: =, length: 115
+2025-08-01 12:53:53 - pyanime.main - INFO - pyanime.py:57 - separator - Creating separator line with type: =, length: 115
+2025-08-01 13:30:39 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 13:30:39 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 13:30:39 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 13:30:39 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 13:30:39 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 13:30:39 - pyanime.main - INFO - pyanime.py:221 - <module> - Starting pyanime application
+2025-08-01 13:30:39 - pyanime.utils.terminal - INFO - terminal_utils.py:66 - separator - Creating separator line with char: =, length: 115
+2025-08-01 13:30:39 - pyanime.utils.terminal - INFO - terminal_utils.py:66 - separator - Creating separator line with char: =, length: 115
+2025-08-01 13:30:39 - pyanime.utils.terminal - INFO - terminal_utils.py:149 - print_section_header - Printed section header: Welcome to pyanime (v1.0.0)
+2025-08-01 13:30:39 - pyanime.main - INFO - pyanime.py:58 - separator - Creating separator line with type: =, length: 115
+2025-08-01 13:30:39 - pyanime.utils.terminal - INFO - terminal_utils.py:66 - separator - Creating separator line with char: =, length: 115
+2025-08-01 13:30:39 - pyanime.utils.terminal - INFO - terminal_utils.py:66 - separator - Creating separator line with char: =, length: 115
+2025-08-01 13:30:39 - pyanime.utils.terminal - INFO - terminal_utils.py:149 - print_section_header - Printed section header: Welcome to pyanime (v1.0.0)
+2025-08-01 13:30:39 - pyanime.main - INFO - pyanime.py:58 - separator - Creating separator line with type: =, length: 115
+2025-08-01 13:30:48 - pyanime.main - INFO - pyanime.py:230 - signal_handler - Application interrupted by user (Ctrl+C)
+2025-08-01 13:30:48 - pyanime.main - WARNING - pyanime.py:54 - separator - Creating separator line with type: =, length: 115
+2025-08-01 13:30:48 - pyanime.main - INFO - pyanime.py:58 - separator - Creating separator line with type: =, length: 115
+2025-08-01 13:32:58 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 13:32:58 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 13:32:58 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 13:32:58 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 13:32:58 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 13:32:58 - pyanime.main - INFO - pyanime.py:221 - <module> - Starting pyanime application
+2025-08-01 13:32:58 - pyanime.utils.terminal - INFO - terminal_utils.py:66 - separator - Creating separator line with char: =, length: 115
+2025-08-01 13:32:58 - pyanime.utils.terminal - INFO - terminal_utils.py:66 - separator - Creating separator line with char: =, length: 115
+2025-08-01 13:32:58 - pyanime.utils.terminal - INFO - terminal_utils.py:149 - print_section_header - Printed section header: Welcome to pyanime (v1.0.0)
+2025-08-01 13:33:15 - pyanime.main - INFO - pyanime.py:244 - <module> - User search query: naruto
+2025-08-01 13:33:15 - pyanime.main - INFO - pyanime.py:251 - <module> - Searching for anime: naruto
+2025-08-01 13:33:15 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:23 - searchAnimeandetails - Searching for anime: naruto
+2025-08-01 13:33:16 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:35 - searchAnimeandetails - Found 26 anime blocks in search results
+2025-08-01 13:33:16 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:99 - searchAnimeandetails - Search completed. Found 26 anime results
+2025-08-01 13:33:16 - pyanime.main - INFO - pyanime.py:257 - <module> - Displaying search results: 26 results found
+2025-08-01 13:33:16 - pyanime.main - INFO - pyanime.py:95 - clean_result - Cleaning results: omitting fields ['Imp'] from 26 results
+2025-08-01 13:33:16 - pyanime.main - INFO - pyanime.py:287 - <module> - Multiple anime found, requesting user selection
+2025-08-01 13:33:16 - pyanime.main - INFO - pyanime.py:58 - separator - Creating separator line with type: =, length: 115
+2025-08-01 13:33:37 - pyanime.main - INFO - pyanime.py:291 - <module> - User selected anime number: 1
+2025-08-01 13:33:37 - pyanime.main - INFO - pyanime.py:296 - <module> - Selected anime: Road of Naruto
+2025-08-01 13:33:37 - pyanime.main - INFO - pyanime.py:58 - separator - Creating separator line with type: =, length: 115
+2025-08-01 13:33:37 - pyanime.main - INFO - pyanime.py:310 - <module> - Fetching anime details for: Road of Naruto
+2025-08-01 13:33:37 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:110 - getAnimeDetails - Getting anime details for watch link: /watch/road-of-naruto-18220
+2025-08-01 13:33:39 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:173 - getAnimeDetails - Successfully extracted anime details for: Road of Naruto
+2025-08-01 13:33:39 - pyanime.main - INFO - pyanime.py:313 - <module> - Anime details retrieved successfully
+2025-08-01 13:33:39 - pyanime.main - INFO - pyanime.py:58 - separator - Creating separator line with type: =, length: 115
+2025-08-01 13:33:39 - pyanime.main - INFO - pyanime.py:361 - <module> - Fetching episode list for anime: Road of Naruto
+2025-08-01 13:33:39 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:25 - getanimepisode - Getting episode list for watch link: /watch/road-of-naruto-18220
+2025-08-01 13:33:39 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:50 - getanimepisode - Found 1 episode elements
+2025-08-01 13:33:39 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:69 - getanimepisode - Successfully extracted 1 episodes
+2025-08-01 13:33:39 - pyanime.main - INFO - pyanime.py:364 - <module> - Episode list retrieved: 1 episodes found
+2025-08-01 13:33:39 - pyanime.main - INFO - pyanime.py:95 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 1 results
+2025-08-01 13:33:39 - pyanime.main - INFO - pyanime.py:58 - separator - Creating separator line with type: =, length: 115
+2025-08-01 13:33:42 - pyanime.main - INFO - pyanime.py:230 - signal_handler - Application interrupted by user (Ctrl+C)
+2025-08-01 13:33:42 - pyanime.main - WARNING - pyanime.py:54 - separator - Creating separator line with type: =, length: 115
+2025-08-01 13:33:42 - pyanime.main - INFO - pyanime.py:58 - separator - Creating separator line with type: =, length: 115
+2025-08-01 13:33:43 - pyanime - INFO - logging_config.py:121 - setup_logging - Logging system initialized
+2025-08-01 13:33:43 - pyanime - INFO - logging_config.py:122 - setup_logging - Log level: INFO
+2025-08-01 13:33:43 - pyanime - INFO - logging_config.py:123 - setup_logging - Log file: D:\Tutorial\Isolated system\pyanime\pyanime.log
+2025-08-01 13:33:43 - pyanime - INFO - logging_config.py:124 - setup_logging - Max file size: 10485760 bytes
+2025-08-01 13:33:43 - pyanime - INFO - logging_config.py:125 - setup_logging - Backup count: 5
+2025-08-01 13:33:44 - pyanime.main - INFO - pyanime.py:221 - <module> - Starting pyanime application
+2025-08-01 13:33:44 - pyanime.utils.terminal - INFO - terminal_utils.py:66 - separator - Creating separator line with char: =, length: 115
+2025-08-01 13:33:44 - pyanime.utils.terminal - INFO - terminal_utils.py:66 - separator - Creating separator line with char: =, length: 115
+2025-08-01 13:33:44 - pyanime.utils.terminal - INFO - terminal_utils.py:149 - print_section_header - Printed section header: Welcome to pyanime (v1.0.0)
+2025-08-01 13:33:56 - pyanime.main - INFO - pyanime.py:244 - <module> - User search query: naruto
+2025-08-01 13:33:56 - pyanime.main - INFO - pyanime.py:251 - <module> - Searching for anime: naruto
+2025-08-01 13:33:56 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:23 - searchAnimeandetails - Searching for anime: naruto
+2025-08-01 13:33:57 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:35 - searchAnimeandetails - Found 26 anime blocks in search results
+2025-08-01 13:33:57 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:99 - searchAnimeandetails - Search completed. Found 26 anime results
+2025-08-01 13:33:57 - pyanime.main - INFO - pyanime.py:257 - <module> - Displaying search results: 26 results found
+2025-08-01 13:33:57 - pyanime.main - INFO - pyanime.py:95 - clean_result - Cleaning results: omitting fields ['Imp'] from 26 results
+2025-08-01 13:33:57 - pyanime.main - INFO - pyanime.py:287 - <module> - Multiple anime found, requesting user selection
+2025-08-01 13:33:57 - pyanime.main - INFO - pyanime.py:58 - separator - Creating separator line with type: =, length: 115
+2025-08-01 13:34:01 - pyanime.main - INFO - pyanime.py:291 - <module> - User selected anime number: 26
+2025-08-01 13:34:01 - pyanime.main - INFO - pyanime.py:296 - <module> - Selected anime: Naruto
+2025-08-01 13:34:01 - pyanime.main - INFO - pyanime.py:58 - separator - Creating separator line with type: =, length: 115
+2025-08-01 13:34:01 - pyanime.main - INFO - pyanime.py:310 - <module> - Fetching anime details for: Naruto
+2025-08-01 13:34:01 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:110 - getAnimeDetails - Getting anime details for watch link: /watch/naruto-677
+2025-08-01 13:34:02 - pyanime.scraper.searchAnimedetails - INFO - searchAnimedetails.py:173 - getAnimeDetails - Successfully extracted anime details for: Naruto
+2025-08-01 13:34:02 - pyanime.main - INFO - pyanime.py:313 - <module> - Anime details retrieved successfully
+2025-08-01 13:34:02 - pyanime.main - INFO - pyanime.py:58 - separator - Creating separator line with type: =, length: 115
+2025-08-01 13:34:02 - pyanime.main - INFO - pyanime.py:361 - <module> - Fetching episode list for anime: Naruto
+2025-08-01 13:34:02 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:25 - getanimepisode - Getting episode list for watch link: /watch/naruto-677
+2025-08-01 13:34:03 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:50 - getanimepisode - Found 220 episode elements
+2025-08-01 13:34:03 - pyanime.scraper.searchEpisodedetails - INFO - searchEpisodedetails.py:69 - getanimepisode - Successfully extracted 220 episodes
+2025-08-01 13:34:03 - pyanime.main - INFO - pyanime.py:364 - <module> - Episode list retrieved: 220 episodes found
+2025-08-01 13:34:03 - pyanime.main - INFO - pyanime.py:95 - clean_result - Cleaning results: omitting fields ['Episode ID', 'URL'] from 220 results
+2025-08-01 13:34:03 - pyanime.main - INFO - pyanime.py:58 - separator - Creating separator line with type: =, length: 115
+2025-08-01 13:34:23 - pyanime.main - INFO - pyanime.py:230 - signal_handler - Application interrupted by user (Ctrl+C)
+2025-08-01 13:34:23 - pyanime.main - WARNING - pyanime.py:54 - separator - Creating separator line with type: =, length: 115
+2025-08-01 13:34:23 - pyanime.main - INFO - pyanime.py:58 - separator - Creating separator line with type: =, length: 115

@@ -3,11 +3,11 @@
 #
 # hianime.py - Configuration for HiAnime 
 # This file contains settings for the HiAnime service, including constants.
-import logging
 
+from .logging_config import setup_logging, get_logger
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s:%(name)s: %(message)s', filename='pyanime.log', filemode='a')
-logger = logging.getLogger(__name__)
+# Setup logging for this module
+logger = get_logger("config.hianime")
 
 
 configure = {
@@ -32,7 +32,7 @@ proxy_headers = {
 key = "https://raw.githubusercontent.com/itzzzme/megacloud-keys/refs/heads/main/key.txt"
 subtitle = "sub"        # Default subtitle language (sub/dub)
 server_type = "hd-3"    # Possible values (hd-1/hd-2/hd-3)
-quality = "1080p"       # quality (1080p/720p/360p)
+quality = "720p"       # quality (1080p/720p/360p)
 consume_data = "stream" # What do you want to do with this video (stream/watch)
 player = "vlc"          # Favourite Player (vlc/mpv/iina)
 parallel = 6            # ↑ increase number to get faster speeds (caveats: could get a temporary ip/device ban if continuous request sent)
