@@ -3,18 +3,32 @@
 #
 # getEpisodestreams.py - Extract episode streams from a given anime ID.
 
+import sys
+import os
 import requests
 from bs4 import BeautifulSoup
 import re
 import json
 from base64 import b64decode
 from Crypto.Cipher import AES
-from config.hianime import configure, proxy_headers, key, server_type, logger
+
+# Add the project root to the Python path
+project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+sys.path.insert(0, project_root)
+
+from config.logging_config import get_logger, log_function_call, log_performance
+from config.hianime import configure, proxy_headers, key, server_type
 from providers.Hianime.Scraper.tokenextractor import extract_token
 
+# Setup logging for this module
+logger = get_logger("scraper.getEpisodestreams")
 
+
+@log_function_call(logger)
+@log_performance(logger)
 def serverextractor(episode):
-    class_lists = [['ps_-block-sub', 'servers-sub'], ['ps_-block-sub', 'servers-dub'],['ps_-block-sub', 'servers-raw']]
+    logger.info("Extracting servers for episode: %s", episode.get('Episode ID', 'Unknown'))
+    class_lists = [['ps_-block-sub', 'servers-sub'], ['ps_-block-sub', 'servers-dub']]
     url = f"{configure['baseurl']}/ajax/v2/episode/servers?episodeId={episode['Episode ID']}"
     proxy_headers["Referer"] = f"{configure['baseurl']}{episode['URL']}"
     logger.info("Fetching servers from URL: %s", url)
@@ -22,6 +36,7 @@ def serverextractor(episode):
         http = requests.get(url, headers=proxy_headers)
         http.raise_for_status()
         data = http.json()
+        logger.debug("Server response status: %d", http.status_code)
     except Exception as e:
         logger.error("Failed to get servers for episode %s: %s", episode['Episode ID'], e, exc_info=True)
         return []
@@ -60,7 +75,9 @@ def serverextractor(episode):
     logger.info("Extracted %d servers total for episode %s", len(servers), episode['Episode ID'])
     return servers
 
+@log_function_call(logger)
 def aes_cryptojs_decrypt(ciphertext_b64, key):
+    logger.debug("Attempting AES decryption")
     try:
         ct = b64decode(ciphertext_b64)
         iv = bytes([0] * 16)
@@ -75,6 +92,8 @@ def aes_cryptojs_decrypt(ciphertext_b64, key):
         logger.error("AES decryption error: %s", e, exc_info=True)
         raise
 
+@log_function_call(logger)
+@log_performance(logger)
 def streams(server, id_str):
     fallback_1 = 'megaplay.buzz'
     fallback_2 = 'vidwish.live'
@@ -86,13 +105,16 @@ def streams(server, id_str):
         sources_resp = requests.get(f"{configure['baseurl']}/ajax/v2/episode/sources?id={server['data_id']}", headers=proxy_headers)
         sources_resp.raise_for_status()
         sources_data = sources_resp.json()
+        logger.debug("Sources response status: %d", sources_resp.status_code)
 
         key_resp = requests.get(key)
         key_resp.raise_for_status()
         keys = key_resp.text.strip()
+        logger.debug("Retrieved encryption keys")
 
         ajax_link = sources_data.get('link')
         if not ajax_link:
+            logger.error("Missing link in sourcesData")
             raise Exception('Missing link in sourcesData')
 
         source_id_match = re.search(r'/([^/?]+)\?', ajax_link)

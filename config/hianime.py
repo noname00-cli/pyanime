@@ -3,11 +3,11 @@
 #
 # hianime.py - Configuration for HiAnime 
 # This file contains settings for the HiAnime service, including constants.
-import logging
 
+from .logging_config import setup_logging, get_logger
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s:%(name)s: %(message)s', filename='pyanime.log', filemode='a')
-logger = logging.getLogger(__name__)
+# Setup logging for this module
+logger = get_logger("config.hianime")
 
 
 configure = {
