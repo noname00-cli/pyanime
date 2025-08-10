@@ -31,7 +31,7 @@ proxy_headers = {
 }
 key = "https://raw.githubusercontent.com/itzzzme/megacloud-keys/refs/heads/main/key.txt"
 subtitle = "sub"        # Default subtitle language (sub/dub)
-server_type = "hd-3"    # Possible values (hd-1/hd-2/hd-3)
+server_type = "hd-2"    # Possible values (hd-1/hd-2/hd-3)
 quality = "1080p"       # quality (1080p/720p/360p)
 consume_data = "stream" # What do you want to do with this video (stream/watch)
 player = "vlc"          # Favourite Player (vlc/mpv/iina)

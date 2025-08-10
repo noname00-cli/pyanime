@@ -14,7 +14,7 @@ from providers.Hianime.Scraper.tokenextractor import extract_token
 
 
 def serverextractor(episode):
-    class_lists = [['ps_-block-sub', 'servers-sub'], ['ps_-block-sub', 'servers-dub']]
+    class_lists = [['ps_-block-sub', 'servers-sub'], ['ps_-block-sub', 'servers-dub'],['ps_-block-sub', 'servers-raw']]
     url = f"{configure['baseurl']}/ajax/v2/episode/servers?episodeId={episode['Episode ID']}"
     proxy_headers["Referer"] = f"{configure['baseurl']}{episode['URL']}"
     logger.info("Fetching servers from URL: %s", url)
@@ -129,7 +129,8 @@ def streams(server, id_str):
             try:
                 fallback = fallback_1 if server['label'].lower() == server_type else fallback_2
                 proxy_headers["Referer"] = f"https://{fallback}/"
-                html = requests.get(f"https://{fallback}/stream/s-2/{id_str['Episode ID']}/{server['data_type']}", headers=proxy_headers).text
+                root = f"https://{fallback}/stream/s-2/{id_str['Episode ID']}/{server['data_type']}"
+                html = requests.get(root, headers=proxy_headers).text
                 data_id_match = re.search(r'data-id=["\'](\d+)["\']', html)
                 real_id = data_id_match.group(1) if data_id_match else None
                 if not real_id:

@@ -63,10 +63,10 @@ def m3u8_parsing(m3u8_dict):
     try:
         logger.info("Starting m3u8_parsing for: %s", m3u8_dict.get("id", {}).get("Title", "Unknown"))
         url = m3u8_dict["link"]["file"]
-        subtitle = m3u8_dict["tracks"]
+        subtitles = m3u8_dict["tracks"]
         intro = m3u8_dict["intro"]
         outro = m3u8_dict["outro"]
-        logger.debug("URL: %s | Subtitles: %s | Intro: %s | Outro: %s", url, subtitle, intro, outro)
+        logger.debug("URL: %s | Subtitles: %s | Intro: %s | Outro: %s", url, subtitles, intro, outro)
         m3u8_data = proxy(url, hd2_headers, proxy_servers, timeout)
         logger.info("Requested m3u8: %s | Status: %s", url, m3u8_data.status_code)
         playlist_str = m3u8_data.text
@@ -103,13 +103,13 @@ def downloading(segments, Name, Anime):
             m3u8_writer.write(segments)
         logger.info("Wrote segments to %s", m3u8_path)
         ydl_opts = {
-            'outtmpl': f"{fixed_Name}.mp4",
+            'outtmpl': f"{fixed_Name}.mkv",
             'quiet': False,
             'no_warnings': True,
-            'merge_output_format': 'mp4',
+            'merge_output_format': 'mkv',
             'http_headers': hd2_headers,
             'enable_file_urls': True,
-            'concurrent_fragment_downloads': parallel
+            'concurrent_fragment_downloads': parallel,
         }
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             logger.info("Starting yt_dlp download for %s", m3u8_path)

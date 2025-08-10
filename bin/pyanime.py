@@ -54,7 +54,7 @@ def choose_servers(servers, needs):
     if selected_servers:
         return selected_servers
     fallback_type = 'dub' if needs == 'sub' else 'sub'
-    fallback_servers = [s for s in servers if s['data_type'] == fallback_type]
+    fallback_servers = [s for s in servers if s['data_type'] in (fallback_type, 'raw')]
     if fallback_servers:
         print(f"Falling back to {hex_to_rgb("#00fb8a", fallback_type)}.")
         print()
@@ -208,6 +208,7 @@ for episode in selected_episodes:
     if not selected_servers:
         print(f"No servers found for episode {episode['Episode ID']}. Skipping.")
         continue
+    #print(selected_servers)
     media = streams(selected_servers[0], episode)
     media, name = m3u8_parsing(media)
     separator("=")
