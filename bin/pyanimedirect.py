@@ -70,8 +70,8 @@ async def download_episode_async(episode, anime_title, needs):
             return 1
         
         media = streams(selected_servers[0], episode)
-        segments, name, tracks_data = m3u8_parsing(media)
-        
+        segments, name, subs = m3u8_parsing(media)
+
         if not segments:
             print(f"Failed to parse m3u8 for episode {episode['No']}. Skipping.")
             return 1
@@ -83,9 +83,9 @@ async def download_episode_async(episode, anime_title, needs):
         base_url = None
         if 'link' in media and 'file' in media['link'] and media['link']['file'].startswith('http'):
             base_url = '/'.join(media['link']['file'].split('/')[:-1]) + '/'
-        
+            
         # Use async downloading with subtitle data and base URL
-        code = await downloading(segments, f"{episode['No']}. {name}", anime_title, tracks_data, base_url)
+        code = await downloading(segments, f"{episode['No']}. {name}", anime_title, subs, base_url)
         
         if code == 1:
             print()

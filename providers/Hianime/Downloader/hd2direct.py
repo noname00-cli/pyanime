@@ -10,6 +10,7 @@ import ffmpeg
 import requests
 import os
 import m3u8
+import time
 import tempfile
 import shutil
 import random
@@ -399,8 +400,6 @@ async def download_subtitles(subtitles, temp_dir):
                         downloaded_subs.append({
                             'path': subtitle_path,
                             'label': sub_info['label'],
-                            'language': sub_info.get('srclang', 'und'),
-                            'default': sub_info.get('default', False)
                         })
                         logger.info("Downloaded subtitle: %s", sub_info['label'])
                 except Exception as e:
@@ -482,7 +481,7 @@ def _concatenate_segments(segment_files, temp_dir):
         logger.error("Error concatenating segments: %s", e)
         raise
 
-def _mux_with_subtitles(video_file, output_file, subtitle_files=None):
+def _mux_with_subtitles(video_file, output_file, downloaded_subs=None):
     """Mux video with subtitles"""
     try:
         # Validate video file
@@ -491,7 +490,7 @@ def _mux_with_subtitles(video_file, output_file, subtitle_files=None):
             raise ValueError(f"Video file does not exist: {video_file}")
         
         # Handle case with no subtitles
-        if not subtitle_files:
+        if not downloaded_subs:
             logger.info("Muxing video without subtitles")
             (
                 ffmpeg
@@ -503,7 +502,7 @@ def _mux_with_subtitles(video_file, output_file, subtitle_files=None):
         
         # Process subtitle files - handle both string paths and dictionary objects
         subtitle_paths = []
-        for sub in subtitle_files:
+        for sub in downloaded_subs:
             if isinstance(sub, dict) and 'path' in sub:
                 # Extract path from dictionary
                 sub_path = sub['path']
@@ -536,9 +535,12 @@ def _mux_with_subtitles(video_file, output_file, subtitle_files=None):
         inputs.extend([ffmpeg.input(sub_path) for sub_path in subtitle_paths])
         
         # Set up output parameters
-        output_kwargs = {'c:v': 'copy', 'c:a': 'copy'}
+        output_kwargs = {'c:v': 'copy', 'c:a': 'copy', 'avoid_negative_ts': 'disabled'}
+        
         for i in range(len(subtitle_paths)):
-            output_kwargs[f'c:s:{i}'] = 'mov_text'
+            output_kwargs[f'c:s:{i}'] = 'copy'
+            
+
         
         # Run ffmpeg
         (
@@ -563,7 +565,7 @@ def _print_progress_step(step, total_steps, message):
     # Log the progress step instead of displaying a progress bar
     logger.info(f"Step {step}/{total_steps}: {message}")
 
-async def downloading(segments, Name, Anime, subtitle_files=None, base_url=None):
+async def downloading(segments, Name, Anime, subtitles=None, base_url=None):
     """
     Download m3u8 segments with parallel downloads and subtitle muxing
     
@@ -681,7 +683,13 @@ async def downloading(segments, Name, Anime, subtitle_files=None, base_url=None)
         _print_progress_step(current_step, total_steps, "Muxing final output")
         logger.info("Muxing final output...")
         try:
-            _mux_with_subtitles(concatenated_file, output_file, subtitle_files)
+            downloaded_subtitles = []
+            if subtitles:
+                # Download subtitles asynchronously
+                downloaded_subtitles = await download_subtitles(subtitles, temp_dir)
+                if not downloaded_subtitles:
+                    logger.warning("No subtitles downloaded, proceeding without subtitles")
+            _mux_with_subtitles(concatenated_file, output_file, downloaded_subtitles)
             if not os.path.exists(output_file) or os.path.getsize(output_file) == 0:
                 logger.error("Muxing failed or produced empty file")
                 return 1
@@ -689,17 +697,15 @@ async def downloading(segments, Name, Anime, subtitle_files=None, base_url=None)
             logger.error("Error muxing with subtitles: %s", e)
             return 1
         
-        logger.info("Download completed: %s", output_file)
-        
         # Display a spinner after download completion
-        print("Processing file", end="")
+        print("Adding Subtitles", end="")
         spinner_chars = ['⣾', '⣽', '⣻', '⢿', '⡿', '⣟', '⣯', '⣷']
         for _ in range(20):  # Show spinner for a short time
             for char in spinner_chars:
                 sys.stdout.write(f"\r{char} Processing file...")
                 sys.stdout.flush()
                 await asyncio.sleep(0.1)
-        sys.stdout.write("\r✓ Processing complete!     \n")
+        sys.stdout.write("\r✓ Adding completed👌!     \n")
         sys.stdout.flush()
         
         return 0
