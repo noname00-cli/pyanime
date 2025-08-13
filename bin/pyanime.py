@@ -9,7 +9,7 @@ from tabulate import tabulate
 from providers.Hianime.Scraper.searchAnimedetails import searchAnimeandetails, getAnimeDetails
 from providers.Hianime.Scraper.searchEpisodedetails import getanimepisode
 from providers.Hianime.Scraper.getEpisodestreams import serverextractor, streams
-from providers.Hianime.Downloader.hd2 import m3u8_parsing, downloading
+from providers.Hianime.Downloader.downloader import m3u8_parsing, downloading
 from config.hianime import subtitle
 
 # Asthetics only!!! Don't give a damn about this!!!
@@ -48,17 +48,33 @@ def clean_result(omit, results):
     return cleaned_results, max_col_width
 
 def choose_servers(servers, needs):
+    valid_types = ['sub', 'dub', 'raw']
+    if needs not in valid_types:
+        print(f"Invalid needs type: {needs}. Must be one of {valid_types}")
+        return []
+
+    # First, try the requested needs type
     selected_servers = [s for s in servers if s['data_type'] == needs]
     if selected_servers:
         return selected_servers
-    fallback_type = 'dub' if needs == 'sub' else 'sub'
-    fallback_servers = [s for s in servers if s['data_type'] in (fallback_type, 'raw')]
-    if fallback_servers:
-        print(f"Falling back to {hex_to_rgb("#00fb8a", fallback_type)}.")
-        print()
-        return fallback_servers
-    print("No servers available for needs or fallback.")
-    return []
+
+    # Define fallback priority based on needs
+    if needs == 'dub':
+        # Prefer sub, then raw
+        fallbacks = ['sub', 'raw']
+    elif needs == 'sub':
+        # Prefer dub, then raw
+        fallbacks = ['dub', 'raw']
+    else:  # needs == 'raw'
+        # Prefer sub, then dub
+        fallbacks = ['sub', 'dub']
+
+    # Try fallbacks in order
+    for fb in fallbacks:
+        fallback_servers = [s for s in servers if s['data_type'] == fb]
+        if fallback_servers:
+            print(f"Primary '{needs}' not available — falling back to '{fb}'.")
+            return fallback_servers
 
 async def download_episode_async(episode, anime_title, needs):
     """Async function to download a single episode"""

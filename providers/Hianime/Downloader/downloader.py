@@ -10,27 +10,16 @@ import ffmpeg
 import requests
 import os
 import m3u8
-import time
 import tempfile
 import shutil
 import random
 import sys
 from urllib.parse import urljoin
-from config.hianime import quality, parallel, logger, timeout, proxy_servers
+from config.hianime import quality, parallel, logger, timeout, proxy_servers, server_type
 
-hd2_headers = {
-    'user-agent': "Mozilla/5.0 (X11; Linux aarch64; rv:122.0) Gecko/20100101 Firefox/122.0",
-    'accept': '*/*',
-    'accept-language': 'en-US,en;q=0.5',
-    'origin': 'https://vidwish.live',
-    'referer': 'https://vidwish.live/',
-    'sec-fetch-dest': 'empty',
-    'sec-fetch-mode': 'cors',
-    'sec-fetch-site': 'cross-site',
-    'te': 'trailers',
-}
-
-hd1_headers = {
+def get_headers(service):
+    if service == "hd-1":
+        hd1_headers = {
     'user-agent': "Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0",
     'accept': '*/*',
     'accept-language': 'en-US,en;q=0.5',
@@ -41,6 +30,20 @@ hd1_headers = {
     'sec-fetch-site': 'cross-site',
     'te': 'trailers',
 }
+        return hd1_headers
+    elif service == "hd-2":
+        hd2_headers = {
+    'user-agent': "Mozilla/5.0 (X11; Linux aarch64; rv:122.0) Gecko/20100101 Firefox/122.0",
+    'accept': '*/*',
+    'accept-language': 'en-US,en;q=0.5',
+    'origin': 'https://vidwish.live',
+    'referer': 'https://vidwish.live/',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'cross-site',
+    'te': 'trailers',
+}
+        return hd2_headers
 
 def proxy(url, headers, proxy_servers, timeout):
     """Try to fetch URL with native IP, then try with proxies if that fails"""
@@ -82,7 +85,7 @@ def m3u8_parsing(m3u8_dict):
         intro = m3u8_dict["intro"]
         outro = m3u8_dict["outro"]
         logger.debug("URL: %s | Subtitles: %s | Intro: %s | Outro: %s", url, subtitles, intro, outro)
-        m3u8_data = proxy(url, hd2_headers, proxy_servers, timeout)
+        m3u8_data = proxy(url, get_headers(server_type), proxy_servers, timeout)
         if not m3u8_data or m3u8_data.status_code != 200:
             logger.error("Failed to fetch m3u8 data: %s", url)
             return None, m3u8_dict["id"]["Title"], subtitles
@@ -106,7 +109,7 @@ def m3u8_parsing(m3u8_dict):
             logger.debug("Checking stream quality: %s vs target: %s", stream_quality, quality)
             if quality == stream_quality:
                 final_url = m3u8_dict["link"]["file"].replace('/master.m3u8', f'/{playlist.uri}')
-                final_media = proxy(final_url, hd2_headers, proxy_servers, timeout)
+                final_media = proxy(final_url, get_headers(server_type), proxy_servers, timeout)
                 if not final_media or final_media.status_code != 200:
                     logger.error("Failed to fetch final media: %s", final_url)
                     continue
@@ -132,7 +135,7 @@ def m3u8_parsing(m3u8_dict):
         
         if highest_playlist:
             final_url = m3u8_dict["link"]["file"].replace('/master.m3u8', f'/{highest_playlist.uri}')
-            final_media = proxy(final_url, hd2_headers, proxy_servers, timeout)
+            final_media = proxy(final_url, get_headers(server_type), proxy_servers, timeout)
             if final_media and final_media.status_code == 200:
                 logger.info("Using highest quality: %dp", highest_resolution)
                 return final_media.text, Name, subtitles
@@ -157,7 +160,7 @@ async def _download_segment(session, semaphore, segment_url, segment_index, temp
                            segment_index, segment_url, retry_count + 1)
                 
                 # Add timeout for individual segment download
-                async with session.get(segment_url, headers=hd2_headers, timeout=timeout) as response:
+                async with session.get(segment_url, headers=get_headers(server_type), timeout=timeout) as response:
                     if response.status != 200:
                         logger.warning("Segment %d returned status code %d (attempt %d)", 
                                      segment_index, response.status, retry_count + 1)
@@ -279,7 +282,7 @@ async def _download_all_segments(m3u8_url, segments, temp_dir, max_concurrent):
     async with aiohttp.ClientSession(
         connector=connector, 
         timeout=timeout_config,
-        headers=hd2_headers
+        headers=get_headers(server_type)
     ) as session:
         tasks = []
         valid_segments = 0
@@ -375,7 +378,7 @@ async def download_subtitles(subtitles, temp_dir):
         async with aiohttp.ClientSession(
             connector=connector,
             timeout=timeout_config,
-            headers=hd2_headers
+            headers=get_headers(server_type)
         ) as session:
             
             tasks = []
@@ -414,7 +417,7 @@ async def download_subtitles(subtitles, temp_dir):
 async def download_single_subtitle(session, subtitle_url, subtitle_path, label):
     """Download a single subtitle file"""
     try:
-        async with session.get(subtitle_url, headers=hd2_headers) as response:
+        async with session.get(subtitle_url, headers=get_headers(server_type)) as response:
             response.raise_for_status()
             content = await response.text()
             
@@ -496,7 +499,7 @@ def _mux_with_subtitles(video_file, output_file, downloaded_subs=None):
                 ffmpeg
                 .input(video_file)
                 .output(output_file, c='copy')
-                .run(overwrite_output=True, quiet=True)
+                .run(overwrite_output=True, quiet=False)
             )
             return
         
@@ -721,4 +724,6 @@ async def downloading(segments, Name, Anime, subtitles=None, base_url=None):
                 logger.debug("Cleaned up temporary directory: %s", temp_dir)
             except Exception as e:
                 logger.warning("Failed to clean up temporary directory: %s", e)
+
+
 
