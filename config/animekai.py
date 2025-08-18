@@ -11,7 +11,7 @@ logger = get_logger("config.hianime")
 
 
 configure = {
-    "baseurl": "https://hianime.bz",
+    "baseurl": "https://animekai.tv",
     "headers": {
         "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0"
     }
@@ -37,16 +37,3 @@ parallel = 6            # ↑ increase number to get faster speeds (caveats: cou
 timeout = 10            # giving time to parse the media urls 
 proxy_servers = {}      # here we have proxy set but not working just for showpiece (hint: use vpn if u get an ip ban)
                         # search for "vpngate" or "vpnbook" for using with vpn.
-
-
-# As of the current year 2025 hianime has
-# these URLs:
-# https://hianime.to    https://hianimez.is
-# https://hianime.bz    https://hianime.cx
-# https://hianime.tv    https://kaido.to
-# https://hianime.nz    https://aniwatchtv.to
-# https://hianime.pe    https://9animetv.to
-#
-# If you want to discover more URLs, you can 
-# visit https://everythingmoe.com/ and can change 
-# the baseurl and the providers URL to the one you want to use.

@@ -12,3 +12,4 @@ urllib3==2.5.0
 yt-dlp==2025.7.21
 ffmpeg-python==0.2.0
 python-vlc==3.0.20123
+PyQt6==6.5.0

@@ -7,7 +7,6 @@ Provides centralized logging setup with different log levels and handlers.
 
 import logging
 import logging.handlers
-import os
 import sys
 from datetime import datetime
 from pathlib import Path
