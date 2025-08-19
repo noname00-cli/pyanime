@@ -1,6 +1,6 @@
 # PyAnime
 
-A text-based application to browse and watch anime.
+A text-based application to browse and download anime.
 
 ## Installation and Usage
 
@@ -48,12 +48,17 @@ Follow these steps to install and run PyAnime:
      ~/.animecache/{anime name}/{episode name}
      ```
 
+7. For configuration
+     ```file
+     /pyanime/config/hianime.py
+     ```
+
 
 ## Features
 
 - Search for anime by title
 - Browse anime episodes
-- Download and watch episodes
+- Download episodes according to your choice (sub/dub) 
 - Customizable terminal interface
 
 ## UI Version
