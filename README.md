@@ -1,4 +1,4 @@
-# PyAnime
+# PyAnime 
 
 A text-based application to browse and download anime.
 
@@ -58,7 +58,7 @@ Follow these steps to run PyAnime:
 
 - Search anime by title
 - Browse anime episodes
-- Downloads episodes according to your choice (sub/dub) 
+- Downloads episodes according to your choice (sub/dub) from various servers
 
 ## UI Version
 
