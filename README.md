@@ -4,7 +4,7 @@ A text-based application to browse and download anime.
 
 ## Installation and Usage
 
-Follow these steps to install and run PyAnime:
+Follow these steps to run PyAnime:
 
 1. Clone the repository:
    ```bash
