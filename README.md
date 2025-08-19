@@ -43,7 +43,7 @@ Follow these steps to run PyAnime:
      python3 -m bin.pyanime  # or python -m bin.pyanime depending on your Python installation
      ```
 
-6. If downloaded, check for
+6. Anime are downloaded in
      ```file
      ~/.animecache/{anime name}/{episode name}
      ```
@@ -56,10 +56,9 @@ Follow these steps to run PyAnime:
 
 ## Features
 
-- Search for anime by title
+- Search anime by title
 - Browse anime episodes
-- Download episodes according to your choice (sub/dub) 
-- Customizable terminal interface
+- Downloads episodes according to your choice (sub/dub) 
 
 ## UI Version
 
