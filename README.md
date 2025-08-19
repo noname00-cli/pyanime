@@ -46,6 +46,7 @@ Follow these steps to install and run PyAnime:
 6. If downloaded the anime check for
      ```file
      ~/.animecache/{anime name}/{episode name}
+     ```
 
 
 ## Features
