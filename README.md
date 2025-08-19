@@ -43,7 +43,7 @@ Follow these steps to install and run PyAnime:
      python3 -m bin.pyanime  # or python -m bin.pyanime depending on your Python installation
      ```
 
-6. If downloaded the anime check for
+6. If downloaded, check for
      ```file
      ~/.animecache/{anime name}/{episode name}
      ```
