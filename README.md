@@ -19,12 +19,12 @@ Follow these steps to install and run PyAnime:
 3. Create a virtual environment (recommended):
    - On Windows:
      ```bash
-     py -m venv venv
+     py -m venv venv  # or python -m venv venv depending on your Python installation
      .\venv\Scripts\activate
      ```
    - On Linux/macOS:
      ```bash
-     python3 -m venv venv
+     python3 -m venv venv  # or python -m venv venv depending on your Python installation
      source venv/bin/activate
      ```
 
@@ -36,12 +36,17 @@ Follow these steps to install and run PyAnime:
 5. Run the application:
    - On Windows:
      ```bash
-     py -m bin.pyanime
+     py -m bin.pyanime  # or python -m bin.pyanime depending on your Python installation
      ```
    - On Linux/macOS:
      ```bash
-     python3 -m bin.pyanime
+     python3 -m bin.pyanime  # or python -m bin.pyanime depending on your Python installation
      ```
+
+6. If downloaded the anime check for
+     ```file
+     ~/.animecache/{anime name}/{episode name}
+
 
 ## Features
 
@@ -55,11 +60,11 @@ Follow these steps to install and run PyAnime:
 PyAnime also includes a graphical user interface. To run the UI version:
 
 ```bash
-py -m bin.pyanime_ui  # On Windows
-python3 -m bin.pyanime_ui  # On Linux/macOS
+py -m bin.pyanime_ui  # On Windows (or python -m bin.pyanime_ui depending on your Python installation)
+python3 -m bin.pyanime_ui  # On Linux/macOS (or python -m bin.pyanime_ui depending on your Python installation)
 ```
 
-### Known UI Issues
+### Known Issues
 
 The UI version may experience some glitches:
 
@@ -71,6 +76,13 @@ The UI version may experience some glitches:
 If you encounter these issues, try restarting the application or switching to the text-based version.
 
 For more information about the UI version, see [README_UI.md](README_UI.md).
+
+As for the CLI version there are several issues like:
+
+- Subtitles getting ahead of the audio dialog in sub
+- There is no information of language in subtitle
+- As for Windows users the default media player doesn't shows the subtitles
+- For some anime (Example: Our Dating Story) it will leave a blank file instead of .mkv file
 
 ## Contributing
 
